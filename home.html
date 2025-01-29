@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dr. Arun Venkatnathan - Portfolio</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav-container">
+        <img src="iiser_logo.png" alt="logo" class="logo" />
+        <div class="nav-links">
+          <a href="home.html" class="nav-name">Dr. Arun Venkatnathan</a>
+          <a href="#">Research</a>
+          <a href="#">Group</a>
+          <a href="#">Publications</a>
+          <a href="#">Gallery</a>
+          <a href="#">News</a>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <h1>SOFT MATTER SIMULATION LABORATORY</h1>
+      <a href="https://www.iiserpune.ac.in/" class="institute-link"
+        >IISER Pune</a
+      >
+    </header>
+
+    <section class="profile-section">
+      <div class="profile-image-container">
+        <img
+          src="image.png"
+          alt="Dr. Arun Venkatnathan"
+          class="profile-image"
+        />
+      </div>
+      <h2>Dr. Arun Venkatnathan</h2>
+      <h3>PROFESSOR OF CHEMISTRY</h3>
+      <div class="social-links">
+        <a href="#" title="Google Scholar"
+          ><i class="fas fa-graduation-cap"></i
+        ></a>
+        <a href="#" title="Research Gate"
+          ><i class="fab fa-researchgate"></i
+        ></a>
+        <a href="#" title="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </section>
+
+    <section>
+      <div class="info">
+        <p>
+          Research in my group focuses on the application of computer
+          simulations to examine properties of battery electrolytes, polymer
+          electrolyte membrane (PEM) fuel cells and carbon dioxide capture. The
+          group focuses on using Molecular Dynamics simulations to explore the
+          effect of temperature and solvent on thermal stability, structure,
+          grain boundary formation, ion transport in several lithium and sodium
+          ion battery soft-solid and liquid electrolytes. We also study the
+          effect of polymer chain length, charge carriers or dopants and
+          fillers, effect of temperature and concentration of dopant on
+          structure and dynamics in PEM environments. The group also
+          investigates the mechanisms of carbon dioxide capture in amines and
+          several heterocyclic compounds using a suite of computational methods.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="cards-container">
+        <div class="card">
+          <h3><i class="fas fa-briefcase"></i> Work Experience</h3>
+          <ul>
+            <li>Professor of Chemistry, IISER Pune (2021-Present)</li>
+            <li>Associate Professor, IISER Pune (2014-2021)</li>
+            <li>Assistant Professor, IISER Pune (2008-2014)</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3><i class="fas fa-graduation-cap"></i> Postdoctoral</h3>
+          <ul>
+            <li>
+              Postdoctoral Research Associate, Pacific Northwest National
+              Laboratory, Jan 2006 – July 2008
+            </li>
+            <li>
+              Postdoctoral Research Associate, University of Utah, Oct 2003-Oct
+              2005
+            </li>
+            <li>
+              Postgraduate Researcher, University of California, Los Angeles,
+              May 2001- Sept 2003
+            </li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3><i class="fas fa-book-open"></i>Education</h3>
+          <ul>
+            <li>
+              B.Sc. Sri Sathya Sai Institute of Higher Learning,
+              Prasanthinilayam, Andhra Pradesh, 1990-1993
+            </li>
+            <li>
+              M.Sc. (Chemistry), Sri Sathya Sai Institute of Higher Learning,
+              Prasanthinilayam, Andhra Pradesh, 1993-1995
+            </li>
+            <li>
+              Ph.D. (Chemistry), Indian Institute of Technology Bombay, 2001.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <script>
+      // Intersection Observer setup
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("show");
+            } else {
+              // Optional: remove class when element is out of view
+              // entry.target.classList.remove('show');
+            }
+          });
+        },
+        {
+          threshold: 0.1, // Trigger when at least 10% of the element is visible
+        }
+      );
+
+      // Observe all sections
+      document.addEventListener("DOMContentLoaded", () => {
+        // Observe profile section
+        const profileSection = document.querySelector(".profile-section");
+        observer.observe(profileSection);
+
+        // Observe info section
+        const infoSection = document.querySelector(".info");
+        observer.observe(infoSection);
+
+        // Observe each card individually
+        const cards = document.querySelectorAll(".card");
+        cards.forEach((card) => {
+          observer.observe(card);
+        });
+      });
+
+      // Add smooth scroll behavior for navigation
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute("href");
+          if (targetId === "#") return;
+
+          document.querySelector(targetId).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
