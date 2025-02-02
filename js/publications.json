@@ -1,0 +1,147 @@
+{
+  "publications": [
+    {
+      "id": 52,
+      "title": "Prabhat Prakash, Birane Fall, Jordan Aguirre, Laura A Sonnenberg, Parameswara Rao Chinnam, Sumanth Chereddy, Dmitriy A. Dikin, Arun Venkatnathan, Stephanie L Wunder, Michael J Zdilla , A soft co-crystalline solid electrolyte for lithium-ion batteries,  Nature Materials 22, 627-635(2023) . ",
+      "link": "https://doi.org/example/53"
+    },
+    {
+      "id": 51,
+      "title": "Uttama Mukherjee, Prabhat Prakash, Arun Venkatnathan, Theoretical assessment of carbon dioxide reactivity in methylpiperidines: A conformational investigation, J Phys. Chem. A, Volume 127, 14, 3123-3132 (2023).   ",
+      "image": "..//images//publications//pub51.jpg",
+      "link": "https://doi.org/10.1038/s41563-023-01505-4"
+    },
+    {
+      "id": 50,
+      "title": "Shylendran Ardhra, Prabhat Prakash, Rabin Siva Dev, Arun Venkatnathan, Effect of concentration and temperature on the structure and ion-transport in diglyme based sodium ion electrolyte, J. Phys. Chem. B, 126, 2119 (2022). ",
+      "image": "..//images//publications//pub50.jpg",
+      "link": "https://doi.org/example/51"
+    },
+    {
+      "id": 49,
+      "title": "Prabhat Prakash, Ardhra Shylendran, Birane Fall, Michael J. Zdilla, Stephanie L. Wunder, Arun Venkatnathan, The mechanism of ion conduction and dynamics in tris(N,N-dimethylformamide) perchloratosodium solid electrolytes, J. Phys. Chem. C, 126, 4744 (2022). ",
+      "image": "..//images//publications//pub49.jpg",
+      "link": "https://doi.org/example/51"
+    },
+    {
+      "id": 48,
+      "title": "Uttama Mukherjee and Arun Venkatnathan , Invoking Chemical Principles to Predict the Anions of Dihydrooxazole Family as Prospective Carbon Capture Moieties, Comp. Theo. Chem, 1206, 113472, (2021).   ",
+      "image": "..//images//publications//pub48.jpg",
+      "link": "https://doi.org/example/51"
+    },
+    {
+      "id": 47,
+      "title": "Prabhat Prakash, Shylendran Ardhra, Birane Fall, Michael J. Zdilla, Stephanie L. Wunder and Arun Venkatnathan , Solvate sponge crystals of (DMF)3NaClO4: reversible pressure/temperature controlled juicing in a melt/press-castable sodium-ion conductor, Chemical Science, 12, 5574 (2021).",
+      "image": "..//images//publications//pub47.jpg",
+      "link": "https://doi.org/example/51"
+    },
+    {
+      "id": 46,
+      "title": "A. V. Lyulin, S. Sengupta, A. Varughese, P. V. Komarov and A. Venkatnathan, Effect of annealing on structure and dynamics in hydrated Nafion membranes, ACS Applied Polymer Materials, 2, 11, 5058 (2020). ",
+      "image": "..//images//publications//pub46.jpg",
+      "link": "https://doi.org/example/51"
+    },
+    {
+      "id": 45,
+      "title": "R. Pant, S. Sengupta, A. V. Lyulin and A. Venkatnathan, Computational investigation of a protic ionic liquid doped poly-benzimidazole fuel cell electrolyte, J. Mol. Liquids, 113686 (2020).",
+      "image": "..//images//publications//pub45.jpg",
+      "link": "https://doi.org/example/51"
+    },
+    {
+      "id": 44,
+      "title": "R. Pant, S. Sengupta, A. V. Lyulin and A. Venkatnathan, Charge delocalization effects on Nafion structure and water /proton dynamics in hydrated environments, Fluid Phase Equil., 504, 112340 (2020).",
+      "image": "..//images//publications//pub44.jpg",
+      "link": "https://doi.org/example/51"
+    },
+    {
+      "id": 43,
+      "title": "B. Fall, P. Prakash, M. R. Gau, S. L. Wunder, A. Venkatnathan and M. J. Zdilla, Experimental and theoretical investigation of the ion conduction mechanism of tris(adiponitrile)perchloratosodium, a self-binding, melt-castable crystalline sodium electrolyte, Chem. Mater., 31, 8850 (2019).",
+      "image": "..//images//publications//pub43.jpg",
+      "link": "https://doi.org/example/51"
+    },
+    {
+      "id": 42,
+      "title": "G. Kritikos, R. Pant, S. Sengupta, K. Karatasos, A. Venkatnathan, and A.V. Lyulin, Nanostructure and Dynamics of Humidified Nafion-Graphene Oxide Composites via Molecular Dynamics Simulations, J. Phys. Chem. C., 122, 22864 (2018). ",
+      "image": "..//images//publications//pub42.jpg",
+      "link": "https://doi.org/example/51"
+    },
+    {
+      "id": 41,
+      "title": "P. Kumar, P. Prakash, K. R. Ramya and A. Venkatnathan, Probing Translational and Rotational Dynamics in Hydrophilic/Hydrophobic Anions based Imidazolium Ionic Liquid-water mixtures Soft Matter, 14, 6109 (2018). ",
+      "image": "..//images//publications//pub41.jpg",
+      "link": "https://doi.org/example/51"
+    },
+    {
+      "id": 40,
+      "title": "P. Prakash, and A. Venkatnathan, Site-Specific Interactions in CO2  Capture by Lysinate Anion and Role of Water Using Density Functional Theory, J. Phys. Chem. C. 122, 12647 (2018).",
+      "image": "..//images//publications//pub40.jpg",
+      "link": "https://doi.org/example/51"
+    },
+    {
+      "id": 39,
+      "title": "Shylendran Ardhra, Prabhat Prakash, Rabin Siva Dev, Arun Venkatnathan, Effect of concentration and temperature on the structure and ion-transport in diglyme based sodium ion electrolyte, J. Phys. Chem. B, 126, 2119 (2022). ",
+      "image": "publication-51.jpg",
+      "link": "https://doi.org/example/51"
+    },
+    {
+      "id": 38,
+      "title": "Shylendran Ardhra, Prabhat Prakash, Rabin Siva Dev, Arun Venkatnathan, Effect of concentration and temperature on the structure and ion-transport in diglyme based sodium ion electrolyte, J. Phys. Chem. B, 126, 2119 (2022). ",
+      "image": "publication-51.jpg",
+      "link": "https://doi.org/example/51"
+    },
+    {
+      "id": 37,
+      "title": "Shylendran Ardhra, Prabhat Prakash, Rabin Siva Dev, Arun Venkatnathan, Effect of concentration and temperature on the structure and ion-transport in diglyme based sodium ion electrolyte, J. Phys. Chem. B, 126, 2119 (2022). ",
+      "image": "publication-51.jpg",
+      "link": "https://doi.org/example/51"
+    },
+    {
+      "id": 36,
+      "title": "Shylendran Ardhra, Prabhat Prakash, Rabin Siva Dev, Arun Venkatnathan, Effect of concentration and temperature on the structure and ion-transport in diglyme based sodium ion electrolyte, J. Phys. Chem. B, 126, 2119 (2022). ",
+      "image": "publication-51.jpg",
+      "link": "https://doi.org/example/51"
+    },
+    {
+      "id": 35,
+      "title": "Shylendran Ardhra, Prabhat Prakash, Rabin Siva Dev, Arun Venkatnathan, Effect of concentration and temperature on the structure and ion-transport in diglyme based sodium ion electrolyte, J. Phys. Chem. B, 126, 2119 (2022). ",
+      "image": "publication-51.jpg",
+      "link": "https://doi.org/example/51"
+    },
+    {
+      "id": 34,
+      "title": "Shylendran Ardhra, Prabhat Prakash, Rabin Siva Dev, Arun Venkatnathan, Effect of concentration and temperature on the structure and ion-transport in diglyme based sodium ion electrolyte, J. Phys. Chem. B, 126, 2119 (2022). ",
+      "image": "publication-51.jpg",
+      "link": "https://doi.org/example/51"
+    },
+    {
+      "id": 33,
+      "title": "Shylendran Ardhra, Prabhat Prakash, Rabin Siva Dev, Arun Venkatnathan, Effect of concentration and temperature on the structure and ion-transport in diglyme based sodium ion electrolyte, J. Phys. Chem. B, 126, 2119 (2022). ",
+      "image": "publication-51.jpg",
+      "link": "https://doi.org/example/51"
+    },
+    {
+      "id": 32,
+      "title": "Shylendran Ardhra, Prabhat Prakash, Rabin Siva Dev, Arun Venkatnathan, Effect of concentration and temperature on the structure and ion-transport in diglyme based sodium ion electrolyte, J. Phys. Chem. B, 126, 2119 (2022). ",
+      "image": "publication-51.jpg",
+      "link": "https://doi.org/example/51"
+    },
+    {
+      "id": 31,
+      "title": "Shylendran Ardhra, Prabhat Prakash, Rabin Siva Dev, Arun Venkatnathan, Effect of concentration and temperature on the structure and ion-transport in diglyme based sodium ion electrolyte, J. Phys. Chem. B, 126, 2119 (2022). ",
+      "image": "publication-51.jpg",
+      "link": "https://doi.org/example/51"
+    },
+    {
+      "id": 30,
+      "title": "Shylendran Ardhra, Prabhat Prakash, Rabin Siva Dev, Arun Venkatnathan, Effect of concentration and temperature on the structure and ion-transport in diglyme based sodium ion electrolyte, J. Phys. Chem. B, 126, 2119 (2022). ",
+      "image": "publication-51.jpg",
+      "link": "https://doi.org/example/51"
+    },
+    {
+      "id": 29,
+      "title": "Shylendran Ardhra, Prabhat Prakash, Rabin Siva Dev, Arun Venkatnathan, Effect of concentration and temperature on the structure and ion-transport in diglyme based sodium ion electrolyte, J. Phys. Chem. B, 126, 2119 (2022). ",
+      "image": "publication-51.jpg",
+      "link": "https://doi.org/example/51"
+    }
+  ]
+}

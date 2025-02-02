@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dr. Arun Venkatnathan - Research</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="elec_mem.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav-container">
+        <div class="logo-section">
+          <img src="iiser_logo.png" alt="logo" class="logo" />
+          <h2>Venkatnathan Lab</h2>
+        </div>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="nav-links">
+          <a href="index.html" class="nav-name">Dr. Arun Venkatnathan</a>
+          <a href="#" class="active">Research</a>
+          <a href="#">Group</a>
+          <a href="#">Publications</a>
+          <a href="#">Gallery</a>
+          <a href="#">News</a>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <h1>CARBON CAPTURE</h1>
+      <div class="hero-overlay"></div>
+    </header>
+
+    <main class="research-content">
+      <div class="research-grid">
+        <div class="research-images">
+          <img
+            src="CARBON_CAPTURE.jpg"
+            alt="Molecular Dynamics Simulation"
+            class="research-image fade-in"
+          />
+        </div>
+        <div class="research-text">
+          <p class="slide-in">
+            The broad goals of our projects is to use quantum chemistry
+            calculations and MD/AIMD simulations to examine CO2 capture in ionic
+            liquids and salts, certain organic compounds and biological systems
+            such as peptides. In our initial work in this area, we used MD
+            simulations to examine the amount of CO2 absorption in phosphonium
+            lysinate ionic liquids to explain the experimental absorption data.
+            The simulations provide insights on the timescales associated with
+            various processes of CO2 absorption. Additionally, the mobility of
+            CO2/absorbent molecules, pair correlation functions and non-bonded
+            interactions also provide an understanding of multiple-site
+            cooperative nature of CO2 capture
+            <a href="">
+              (Venkatnathan and coworkers. RSC Adv., 2016, 6, 55438-55443)</a
+            >. In our subsequent projects, we used quantum chemistry
+            calculations to extract the distribution of products formed upon
+            interaction of CO2-lysinate anion and CO2-water-lysinate anion
+            <a href=""
+              >(Venkatnathan and coworkers J. Phys. Chem. C 2018, 122,
+              12647–12656)</a
+            >
+            . Recently, we examined the possible reaction conditions for
+            CO2-dihydrooxazole reactions and relative stabilities from DFT
+            calculations
+            <a href=""
+              >(Venkatnathan and coworkers. Comp. Theo. Chem, 2021, 1206,
+              113472)</a
+            >.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      // Hamburger menu functionality
+      document
+        .querySelector(".hamburger")
+        .addEventListener("click", function () {
+          this.classList.toggle("active");
+          document.querySelector(".nav-links").classList.toggle("active");
+        });
+
+      // Animation on scroll
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+            }
+          });
+        },
+        { threshold: 0.1 }
+      );
+
+      document.querySelectorAll(".fade-in, .slide-in").forEach((element) => {
+        observer.observe(element);
+      });
+    </script>
+  </body>
+</html>
