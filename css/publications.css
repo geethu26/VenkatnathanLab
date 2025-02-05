@@ -1,11 +1,12 @@
 .heading {
-  margin-top: 150px;
+  margin-top: 109px;
   margin-bottom: 50px;
   padding: 50px;
-  background-color: rgba(81, 112, 132, 0.1);
+  background-color: rgba(71, 125, 140, 0.1);
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 20px;
 }
 
 .publications-header {
@@ -19,6 +20,11 @@
   gap: 2rem;
   max-width: 1000px;
   margin: 0 auto;
+}
+
+footer {
+  height: 20px;
+  color: azure;
 }
 
 /* Modify the card layout */

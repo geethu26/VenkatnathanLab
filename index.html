@@ -17,15 +17,25 @@
   <body>
     <nav class="nav">
       <div class="nav-container">
-        <img src="./images/iiser_logo.png" alt="logo" class="logo" />
+        <div class="logo-container">
+          <img src="./images/iiser_logo.png" alt="logo" class="logo" />
+          <div class="lab-name">Venkatnathan Labs</div>
+        </div>
         <div class="nav-links">
           <a href="index.html" class="nav-name">Dr. Arun Venkatnathan</a>
           <a href="#">Research</a>
-          <a href="#">Group</a>
+          <a href="./html/group.html">Group</a>
           <a href="./html/publications.html">Publications</a>
           <a href="#">Gallery</a>
           <a href="#">News</a>
         </div>
+        <button class="hamburger">
+          <div class="hamburger-lines">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
+        </button>
       </div>
     </nav>
 
@@ -167,6 +177,36 @@
           document.querySelector(targetId).scrollIntoView({
             behavior: "smooth",
           });
+        });
+      });
+
+      // For hamburger
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
+      const body = document.body;
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navLinks.classList.toggle("active");
+      });
+
+      // Close menu when clicking outside
+      document.addEventListener("click", (e) => {
+        if (
+          !hamburger.contains(e.target) &&
+          !navLinks.contains(e.target) &&
+          navLinks.classList.contains("active")
+        ) {
+          hamburger.classList.remove("active");
+          navLinks.classList.remove("active");
+        }
+      });
+
+      // Close menu when clicking on a link
+      navLinks.querySelectorAll("a").forEach((link) => {
+        link.addEventListener("click", () => {
+          hamburger.classList.remove("active");
+          navLinks.classList.remove("active");
         });
       });
     </script>

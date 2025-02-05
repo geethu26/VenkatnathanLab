@@ -3,145 +3,301 @@
     {
       "id": 52,
       "title": "Prabhat Prakash, Birane Fall, Jordan Aguirre, Laura A Sonnenberg, Parameswara Rao Chinnam, Sumanth Chereddy, Dmitriy A. Dikin, Arun Venkatnathan, Stephanie L Wunder, Michael J Zdilla , A soft co-crystalline solid electrolyte for lithium-ion batteries,  Nature Materials 22, 627-635(2023) . ",
-      "link": "https://doi.org/example/53"
+      "link": "https://www.nature.com/articles/s41563-023-01508-1"
     },
     {
       "id": 51,
       "title": "Uttama Mukherjee, Prabhat Prakash, Arun Venkatnathan, Theoretical assessment of carbon dioxide reactivity in methylpiperidines: A conformational investigation, J Phys. Chem. A, Volume 127, 14, 3123-3132 (2023).   ",
       "image": "..//images//publications//pub51.jpg",
-      "link": "https://doi.org/10.1038/s41563-023-01505-4"
+      "link": "https://pubs.acs.org/doi/full/10.1021/acs.jpca.3c00406"
     },
     {
       "id": 50,
       "title": "Shylendran Ardhra, Prabhat Prakash, Rabin Siva Dev, Arun Venkatnathan, Effect of concentration and temperature on the structure and ion-transport in diglyme based sodium ion electrolyte, J. Phys. Chem. B, 126, 2119 (2022). ",
       "image": "..//images//publications//pub50.jpg",
-      "link": "https://doi.org/example/51"
+      "link": "https://pubs.acs.org/doi/10.1021/acs.jpcb.2c00557"
     },
     {
       "id": 49,
       "title": "Prabhat Prakash, Ardhra Shylendran, Birane Fall, Michael J. Zdilla, Stephanie L. Wunder, Arun Venkatnathan, The mechanism of ion conduction and dynamics in tris(N,N-dimethylformamide) perchloratosodium solid electrolytes, J. Phys. Chem. C, 126, 4744 (2022). ",
       "image": "..//images//publications//pub49.jpg",
-      "link": "https://doi.org/example/51"
+      "link": "https://pubs.acs.org/doi/10.1021/acs.jpcc.1c09005"
     },
     {
       "id": 48,
       "title": "Uttama Mukherjee and Arun Venkatnathan , Invoking Chemical Principles to Predict the Anions of Dihydrooxazole Family as Prospective Carbon Capture Moieties, Comp. Theo. Chem, 1206, 113472, (2021).   ",
       "image": "..//images//publications//pub48.jpg",
-      "link": "https://doi.org/example/51"
+      "link": "https://www.sciencedirect.com/science/article/abs/pii/S2210271X21003303?via%3Dihub"
     },
     {
       "id": 47,
       "title": "Prabhat Prakash, Shylendran Ardhra, Birane Fall, Michael J. Zdilla, Stephanie L. Wunder and Arun Venkatnathan , Solvate sponge crystals of (DMF)3NaClO4: reversible pressure/temperature controlled juicing in a melt/press-castable sodium-ion conductor, Chemical Science, 12, 5574 (2021).",
       "image": "..//images//publications//pub47.jpg",
-      "link": "https://doi.org/example/51"
+      "link": "https://pubs.rsc.org/en/content/articlelanding/2021/sc/d0sc06455f"
     },
     {
       "id": 46,
       "title": "A. V. Lyulin, S. Sengupta, A. Varughese, P. V. Komarov and A. Venkatnathan, Effect of annealing on structure and dynamics in hydrated Nafion membranes, ACS Applied Polymer Materials, 2, 11, 5058 (2020). ",
       "image": "..//images//publications//pub46.jpg",
-      "link": "https://doi.org/example/51"
+      "link": "https://pubs.acs.org/doi/10.1021/acsapm.0c00875"
     },
     {
       "id": 45,
       "title": "R. Pant, S. Sengupta, A. V. Lyulin and A. Venkatnathan, Computational investigation of a protic ionic liquid doped poly-benzimidazole fuel cell electrolyte, J. Mol. Liquids, 113686 (2020).",
       "image": "..//images//publications//pub45.jpg",
-      "link": "https://doi.org/example/51"
+      "link": "https://www.sciencedirect.com/science/article/pii/S0167732220321310?via%3Dihub"
     },
     {
       "id": 44,
       "title": "R. Pant, S. Sengupta, A. V. Lyulin and A. Venkatnathan, Charge delocalization effects on Nafion structure and water /proton dynamics in hydrated environments, Fluid Phase Equil., 504, 112340 (2020).",
       "image": "..//images//publications//pub44.jpg",
-      "link": "https://doi.org/example/51"
+      "link": "https://www.sciencedirect.com/science/article/abs/pii/S0378381219304017?via%3Dihubs"
     },
     {
       "id": 43,
       "title": "B. Fall, P. Prakash, M. R. Gau, S. L. Wunder, A. Venkatnathan and M. J. Zdilla, Experimental and theoretical investigation of the ion conduction mechanism of tris(adiponitrile)perchloratosodium, a self-binding, melt-castable crystalline sodium electrolyte, Chem. Mater., 31, 8850 (2019).",
       "image": "..//images//publications//pub43.jpg",
-      "link": "https://doi.org/example/51"
+      "link": "https://pubs.acs.org/doi/10.1021/acs.chemmater.9b02853"
     },
     {
       "id": 42,
       "title": "G. Kritikos, R. Pant, S. Sengupta, K. Karatasos, A. Venkatnathan, and A.V. Lyulin, Nanostructure and Dynamics of Humidified Nafion-Graphene Oxide Composites via Molecular Dynamics Simulations, J. Phys. Chem. C., 122, 22864 (2018). ",
       "image": "..//images//publications//pub42.jpg",
-      "link": "https://doi.org/example/51"
+      "link": "https://pubs.acs.org/doi/10.1021/acs.jpcc.8b07170"
     },
     {
       "id": 41,
       "title": "P. Kumar, P. Prakash, K. R. Ramya and A. Venkatnathan, Probing Translational and Rotational Dynamics in Hydrophilic/Hydrophobic Anions based Imidazolium Ionic Liquid-water mixtures Soft Matter, 14, 6109 (2018). ",
       "image": "..//images//publications//pub41.jpg",
-      "link": "https://doi.org/example/51"
+      "link": "https://pubs.rsc.org/en/Content/ArticleLanding/2018/SM/C8SM00765A"
     },
     {
       "id": 40,
       "title": "P. Prakash, and A. Venkatnathan, Site-Specific Interactions in CO2  Capture by Lysinate Anion and Role of Water Using Density Functional Theory, J. Phys. Chem. C. 122, 12647 (2018).",
       "image": "..//images//publications//pub40.jpg",
-      "link": "https://doi.org/example/51"
+      "link": "https://pubs.acs.org/doi/abs/10.1021/acs.jpcc.8b03882"
     },
     {
       "id": 39,
-      "title": "Shylendran Ardhra, Prabhat Prakash, Rabin Siva Dev, Arun Venkatnathan, Effect of concentration and temperature on the structure and ion-transport in diglyme based sodium ion electrolyte, J. Phys. Chem. B, 126, 2119 (2022). ",
-      "image": "publication-51.jpg",
-      "link": "https://doi.org/example/51"
+      "title": "P. Prakash, J. Aguirre, M. Van Vliet, P. Chinnam, D. Dikin, M. Zdilla, S. Wunder, A. Venkatnathan, Unravelling the structural and dynamical complexity of the equilibrium liquid grain-binding layer in highly conductive organic crystalline electrolytes, J. Mater. Chem. A. 6, 4394 (2018).",
+      "image": "..//images//publications//pub39.jpg",
+      "link": "https://pubs.rsc.org/en/content/articlelanding/2018/ta/c7ta10367k"
     },
     {
       "id": 38,
-      "title": "Shylendran Ardhra, Prabhat Prakash, Rabin Siva Dev, Arun Venkatnathan, Effect of concentration and temperature on the structure and ion-transport in diglyme based sodium ion electrolyte, J. Phys. Chem. B, 126, 2119 (2022). ",
-      "image": "publication-51.jpg",
-      "link": "https://doi.org/example/51"
+      "title": "S. Sengupta, R. Pant, P. Komarov, A. Venkatnathan and A. V. Lyulin, Atomistic simulation study of the hydrated structure and transport dynamics of a novel multi acid side chain polyelectrolyte membrane, Int J. Hydrogen Energy 42, 27254 (2017).",
+      "image": "..//images//publications//pub38.jpg",
+      "link": "https://www.sciencedirect.com/science/article/abs/pii/S0360319917337096"
     },
     {
       "id": 37,
-      "title": "Shylendran Ardhra, Prabhat Prakash, Rabin Siva Dev, Arun Venkatnathan, Effect of concentration and temperature on the structure and ion-transport in diglyme based sodium ion electrolyte, J. Phys. Chem. B, 126, 2119 (2022). ",
-      "image": "publication-51.jpg",
-      "link": "https://doi.org/example/51"
+      "title": "R. Pant, M. Kumar and A. Venkatnathan, Quantum Mechanical Investigation of Proton Transport in Imidazolium Methanesulfonate Ionic liquid , J. Phys. Chem. C. 121, 7069 (2017).",
+      "image": "..//images//publications//pub37.jpg",
+      "link": "https://pubs.acs.org/doi/10.1021/acs.jpcc.6b11997"
     },
     {
       "id": 36,
-      "title": "Shylendran Ardhra, Prabhat Prakash, Rabin Siva Dev, Arun Venkatnathan, Effect of concentration and temperature on the structure and ion-transport in diglyme based sodium ion electrolyte, J. Phys. Chem. B, 126, 2119 (2022). ",
-      "image": "publication-51.jpg",
-      "link": "https://doi.org/example/51"
+      "title": " P. Prakash and A. Venkatnathan, Molecular mechanism of CO2  absorption in Phosphonium Amino Acid Ionic Liquid, RSC Advances 6, 55438 (2016).",
+      "image": "..//images//publications//pub36.jpg",
+      "link": "https://pubs.rsc.org/en/content/articlelanding/2016/ra/c6ra09577a"
     },
     {
       "id": 35,
-      "title": "Shylendran Ardhra, Prabhat Prakash, Rabin Siva Dev, Arun Venkatnathan, Effect of concentration and temperature on the structure and ion-transport in diglyme based sodium ion electrolyte, J. Phys. Chem. B, 126, 2119 (2022). ",
-      "image": "publication-51.jpg",
-      "link": "https://doi.org/example/51"
+      "title": "K. R. Ramya, P. Kumar and A. Venkatnathan, Molecular Simulations of Anion and Temperature Dependence on Structure and Dynamics of 1-hexyl-3-methylimidazolium Ionic Liquids, J. Phys. Chem. B, 119, 14800 (2015).",
+      "image": "..//images//publications//pub35.jpg",
+      "link": "https://pubs.acs.org/doi/abs/10.1021/acs.jpcb.5b09456"
     },
     {
       "id": 34,
-      "title": "Shylendran Ardhra, Prabhat Prakash, Rabin Siva Dev, Arun Venkatnathan, Effect of concentration and temperature on the structure and ion-transport in diglyme based sodium ion electrolyte, J. Phys. Chem. B, 126, 2119 (2022). ",
-      "image": "publication-51.jpg",
-      "link": "https://doi.org/example/51"
+      "title": "M. Kumar and A. Venkatnathan, Quantum Chemistry Study of Proton Transport in Imidazole Chains, J. Phys. Chem. B 119, 3213 (2015).",
+      "image": "..//images//publications//pub34.jpg",
+      "link": "https://pubs.acs.org/doi/abs/10.1021/jp508994c"
     },
     {
       "id": 33,
-      "title": "Shylendran Ardhra, Prabhat Prakash, Rabin Siva Dev, Arun Venkatnathan, Effect of concentration and temperature on the structure and ion-transport in diglyme based sodium ion electrolyte, J. Phys. Chem. B, 126, 2119 (2022). ",
-      "image": "publication-51.jpg",
-      "link": "https://doi.org/example/51"
+      "title": "K. R. Ramya, P. Kumar, A. Kumar and A. Venkatnathan, Interplay of Phase Separation, Tail Aggregation, and Micelle Formation in the Nanostructured Organization of Hydrated Imidazolium Ionic Liquid , J. Phys. Chem. B 118, 8839 (2014). ",
+      "image": "..//images//publications//pub33.jpg",
+      "link": "https://pubs.acs.org/doi/abs/10.1021/jp504270b"
     },
     {
       "id": 32,
-      "title": "Shylendran Ardhra, Prabhat Prakash, Rabin Siva Dev, Arun Venkatnathan, Effect of concentration and temperature on the structure and ion-transport in diglyme based sodium ion electrolyte, J. Phys. Chem. B, 126, 2119 (2022). ",
-      "image": "publication-51.jpg",
-      "link": "https://doi.org/example/51"
+      "title": "K. R. Ramya, R. Kumar and A. Venkatnathan, Energy and spectral characteristics of hydrogen occupied pure and tetrahydrofuran doped water cages, Comp. Theo. Chem. 1039, 28 (2014). ",
+      "image": "..//images//publications//pub32.jpg",
+      "link": "https://www.sciencedirect.com/science/article/abs/pii/S2210271X1400200X"
     },
     {
       "id": 31,
-      "title": "Shylendran Ardhra, Prabhat Prakash, Rabin Siva Dev, Arun Venkatnathan, Effect of concentration and temperature on the structure and ion-transport in diglyme based sodium ion electrolyte, J. Phys. Chem. B, 126, 2119 (2022). ",
-      "image": "publication-51.jpg",
-      "link": "https://doi.org/example/51"
+      "title": "M. More, A. P. Sunda, and A. Venkatnathan, Polymer chain length, phosphoric acid doping and temperature dependence on structure and dynamics of ABPBI [poly(2,5-benzimidazole)] polymer electrolyte membrane, RSC Advances 4, 19746 (2014). ",
+      "image": "..//images//publications//pub31.jpg",
+      "link": "https://pubs.rsc.org/en/content/articlelanding/2014/ra/c4ra01421a#!divAbstract"
     },
     {
       "id": 30,
-      "title": "Shylendran Ardhra, Prabhat Prakash, Rabin Siva Dev, Arun Venkatnathan, Effect of concentration and temperature on the structure and ion-transport in diglyme based sodium ion electrolyte, J. Phys. Chem. B, 126, 2119 (2022). ",
-      "image": "publication-51.jpg",
-      "link": "https://doi.org/example/51"
+      "title": "A. P. Sunda, V. M. Dhavale, K. Sreekumar and A. Venkatnathan, Structure and Dynamics of Benzyl-NX3 (X = Me, Et) Trifluoromethanesulfonate Ionic Liquids, J. Phys. Chem. B 118, 1831 (2014). ",
+      "image": "..//images//publications//pub30.jpg",
+      "link": "https://pubs.acs.org/doi/abs/10.1021/jp410487a"
     },
     {
       "id": 29,
-      "title": "Shylendran Ardhra, Prabhat Prakash, Rabin Siva Dev, Arun Venkatnathan, Effect of concentration and temperature on the structure and ion-transport in diglyme based sodium ion electrolyte, J. Phys. Chem. B, 126, 2119 (2022). ",
-      "image": "publication-51.jpg",
-      "link": "https://doi.org/example/51"
+      "title": "M. Kumar and A. Venkatnathan, Mechanism of proton transport in ionic liquid doped Perfluorosulfonic acid membranes, J. Phys. Chem. B 117, 14449 (2013).",
+      "image": "..//images//publications//pub29.jpg",
+      "link": "https://pubs.acs.org/doi/abs/10.1021/jp408352w"
+    },
+    {
+      "id": 28,
+      "title": "K. R. Ramya and A. Venkatnathan, Characterization of interaction energy and vibrational Raman spectra of nitrogen clathrate hydrates, Comp. Theo. Chem. 1024, 1 (2013). ",
+      "image": "..//images//publications//pub28.jpg",
+      "link": "https://www.sciencedirect.com/science/article/abs/pii/S2210271X13003757"
+    },
+    {
+      "id": 27,
+      "title": "K. R. Ramya and A. Venkatnathan, Density Functional Theory study of oxygen clathrate hydrates, Indian J Chem, Sec A, special issue on Complex Chemical Systems, 52A, 1061 (2013). ",
+      "image": "..//images//publications//pub27.jpg",
+      "link": ""
+    },
+    {
+      "id": 26,
+      "title": "K. R. Ramya and A. Venkatnathan, Vibrational Raman spectra of hydrogen clathrate hydrates from Density Functional Theory, J. Chem. Phys., 138, 124305 (2013). ",
+      "image": "..//images//publications//pub26.jpg",
+      "link": "https://pubs.aip.org/aip/jcp/article-abstract/138/12/124305/844104/Vibrational-Raman-spectra-of-hydrogen-clathrate?redirectedFrom=fulltext"
+    },
+    {
+      "id": 25,
+      "title": " A. P. Sunda and A. Venkatnathan, Parametric dependence on shear viscosity of SPC/E water from equilibrium and non-equilbrium molecular dynamics simulations, Molecular Simulation, 39, 728 (2013)..",
+      "image": "..//images//publications//pub25.jpg",
+      "link": "https://www.tandfonline.com/doi/abs/10.1080/08927022.2012.762098"
+    },
+    {
+      "id": 24,
+      "title": "A. P. Sunda, M. More and A. Venkatnathan, A Molecular investigation of nanostructure and dynamics of Phosphoric/Triflic acid blends of hydrated ABPBI [poly(2,5-benzimidazole)] Polymer Electrolyte Membrane, Soft Matter, 9, 1122 (2013). ",
+      "image": "..//images//publications//pub24.jpg",
+      "link": "https://pubs.rsc.org/en/content/articlelanding/2013/sm/c2sm26927a"
+    },
+    {
+      "id": 23,
+      "title": "A. P. Sunda and A. Venkatnathan, Molecular Dynamics Simulations of Side Chain Pendant of Perfluorosulfonic Acid Polymer Electrolyte Membranes, J. Mater. Chem. A., 1, 557 (2013). ",
+      "image": "..//images//publications//pub23.jpg",
+      "link": "https://pubs.rsc.org/en/content/articlelanding/2013/ta/c2ta00390b"
+    },
+    {
+      "id": 22,
+      "title": "M. More, S. Pahari, S. Roy and A. Venkatnathan, Characterization of structure and dynamics of phosphoric acid doped benzimidazole mixtures: a molecular dynamics study, J. Mol. Mod., 19, 109 (2013). ",
+      "image": "..//images//publications//pub22.jpg",
+      "link": "https://link.springer.com/article/10.1007/s00894-012-1519-8"
+    },
+    {
+      "id": 21,
+      "title": " A. P. Sunda and A. Venkatnathan, Atomistic Simulations of Structure and Dynamics of Hydrated Aciplex Polymer Electrolyte Membrane, Soft Matter, 8, 10827 (2012). ",
+      "image": "..//images//publications//pub21.jpg",
+      "link": "https://pubs.rsc.org/en/Content/ArticleLanding/2012/SM/C2SM26561C"
+    },
+    {
+      "id": 20,
+      "title": "M. Mane, A. Venkatnathan, K. Ghatak and K. Vanka, Exploring the Potential of Doped Zero-Dimensional Cages for Proton Transfer in Fuel Cells: A Computational Study, J. Phys. Chem. B, 116, 9803 (2012).",
+      "image": "..//images//publications//pub20.jpg",
+      "link": "https://pubs.acs.org/doi/abs/10.1021/jp303884p"
+    },
+    {
+      "id": 19,
+      "title": "K. R. Ramya and A. Venkatnathan, Stability and Reactivity of Methane Clathrate Hydrates: Insights from Density Functional Theory, J. Phys. Chem. A, 116, 7742 (2012).",
+      "image": "..//images//publications//pub19.jpg",
+      "link": "https://pubs.acs.org/doi/abs/10.1021/jp304229p"
+    },
+    {
+      "id": 18,
+      "title": "S. Pahari, C. Choudhary, P. R. Pandey, M. More, A. Venkatnathan and S. Roy, Molecular Dynamics Simulation of Phosphoric Acid Doped Monomer of Polybenzimidazole: A Potential Component Polymer Electrolyte Membrane of Fuel Cell, J. Phys. Chem. B, 116, 7357 (2012). ",
+      "image": "..//images//publications//pub18.jpg",
+      "link": "https://pubs.acs.org/doi/abs/10.1021/jp301117m"
+    },
+    {
+      "id": 17,
+      "title": "K. R. Ramya, G. V. Pavan Kumar and A. Venkatnathan, Raman spectra of vibrational and librational modes of methane clathrate hydrates using Density Functional Theory, J. Chem. Phys., 136, 174305 (2012). ",
+      "image": "..//images//publications//pub17.jpg",
+      "link": "https://pubs.aip.org/aip/jcp/article-abstract/136/17/174305/191621/Raman-spectra-of-vibrational-and-librational-modes?redirectedFrom=fulltext"
+    },
+    {
+      "id": 16,
+      "title": "A. P. Sunda and A. Venkatnathan, Molecular Dynamics Simulations of Triflic acid and Triflate Ions/Water Mixtures: A Potential Electrolyte Component in Fuel Cells, J. Comput. Chem., 32, 3319 (2011). ",
+      "image": "..//images//publications//pub16.jpg",
+      "link": "https://onlinelibrary.wiley.com/doi/abs/10.1002/jcc.21929"
+    },
+    {
+      "id": 15,
+      "title": "R. Devanathan, A. Venkatnathan, R. Rousseau, M. Dupuis, T. Frigato, W. Gu and V. Helms, Atomistic simulation of water percolation and proton hopping in Nafion fuel cell membrane, J. Phys. Chem. B, 114, 13681 (2010).",
+      "link": "https://pubs.acs.org/doi/abs/10.1021/jp103398b"
+    },
+    {
+      "id": 14,
+      "title": "R. Devanathan, A. Venkatnathan and M. Dupuis, Atomistic simulation of Nafion membrane: II. Dynamics of water molecules and hydronium ions, J. Phys. Chem. B, 111, 13006 (2007). ",
+      "link": "https://pubs.acs.org/doi/abs/10.1021/jp0761057"
+    },
+    {
+      "id": 13,
+      "title": "R. Devanathan, A. Venkatnathan and M. Dupuis, Atomistic simulation of Nafion membrane: I. Effect of Hydration on Membrane Nanostructure, J. Phys. Chem. B, 111, 8069 (2007). ",
+      "link": "https://pubs.acs.org/doi/abs/10.1021/jp0726992"
+    },
+
+    {
+      "id": 12,
+      "title": "A. Venkatnathan, R. Devanathan and M. Dupuis, Atomistic simulations of hydrated Nafion and temperature effects on hydronium ion mobility, J. Phys. Chem. B, 111, 7234 (2007). ",
+      "link": "https://pubs.acs.org/doi/abs/10.1021/jp0700276"
+    },
+    {
+      "id": 11,
+      "title": "A. Violi and A. Venkatnathan, Combustion generated nano-particles in a benzene flame: A multiscale approach, J. Chem. Phys., 125, 054302, (2006). ",
+      "link": "https://pubs.aip.org/aip/jcp/article-abstract/125/5/054302/908853/Combustion-generated-nanoparticles-produced-in-a?redirectedFrom=fulltext"
+    },
+    {
+      "id": 10,
+      "title": "A. Venkatnathan and G. A. Voth, Superposition State Molecular Dynamics. J. Chem. Theory Comput., 1, 36 (2005). ",
+      "link": "https://pubs.acs.org/doi/abs/10.1021/ct0499175"
+    },
+    {
+      "id": 9,
+      "title": "A. Venkatnathan, A. Szilva, D. Walter, R. Gdanitz and E. A. Carter, Size extensivity corrections to local multi-reference configuration interaction. J. Chem. Phys., 120, 1693, (2004). ",
+      "link": "https://pubs.aip.org/aip/jcp/article-abstract/120/4/1693/535888/Size-extensive-modification-of-local?redirectedFrom=fulltext"
+    },
+    {
+      "id": 8,
+      "title": "D. Walter, A. Venkatnathan, and E. A. Carter, Local correlation in the virtual space using Multireference Configuration Interaction. J. Chem. Phys. 118, 8127 (2003). ",
+      "link": "https://pubs.aip.org/aip/jcp/article-abstract/118/18/8127/460810/Local-correlation-in-the-virtual-space-in?redirectedFrom=fulltext"
+    },
+    {
+      "id": 7,
+      "title": "A. Venkatnathan and M. K. Mishra, Treatment of Shape and Auger Resonances using the Dilated Electron Propagator - A Brief Overview of Theory and Applications, invited contribution in Indian J. Phys., 3, 171 (2003). ",
+      "link": ""
+    },
+    {
+      "id": 6,
+      "title": "M. K. Mishra and A. Venkatnathan, Treatment of Shape and Auger Resonances using the Dilated Electron Propagator, Int. J. Quant. Chem., 90, 1334 (2002). ",
+      "link": "https://onlinelibrary.wiley.com/doi/abs/10.1002/qua.10367"
+    },
+    {
+      "id": 5,
+      "title": "S. Mahalakshmi, A. Venkatnathan, and M. K. Mishra, Application of higher order decouplings of the dilated electron propagator to 2ΠCO−2Π CO−, 2ΠgN−22Πg N2− and 2ΠgC2H−22Πg C2H2− shape resonances, J. Chem. Phys., 115, 4549 (2001). ",
+      "link": "https://pubs.aip.org/aip/jcp/article-abstract/115/10/4549/443838/Application-of-higher-order-decouplings-of-the?redirectedFrom=fulltext"
+    },
+    {
+      "id": 4,
+      "title": "A. Venkatnathan, S. Mahalakshmi, and M. K. Mishra, Higher order decouplings of the dilated electron propagator with applications to 2PBe−2P Be−, 2PMg−2P Mg− shape and 2SBe+2S Be+ (1s−1)(1s−1) Auger resonances, J. Chem. Phys., 114, 35 (2001). ",
+      "link": "https://pubs.aip.org/aip/jcp/article-abstract/114/1/35/455757/Higher-order-decouplings-of-the-dilated-electron?redirectedFrom=fulltext"
+    },
+    {
+      "id": 3,
+      "title": "A. Venkatnathan, M. K. Mishra and H. J. A. Jensen, An investigation of the basis set effects in the characterization of electron-atom scattering resonances using the dilated electron propagator method, Theor. Chem. Accts., 104, 445 (2000). ",
+      "link": "https://link.springer.com/article/10.1007/s002140000164"
+    },
+
+    {
+      "id": 2,
+      "title": "A. Venkatnathan and M. K. Mishra, The 2-g shape resonance in electron-acetylene scattering: An investigation using the dilated electron propagator method, Chem. Phys. Lett., 296, 223 (1998). ",
+      "link": "https://www.sciencedirect.com/science/article/abs/pii/S0009261498010653"
+    },
+
+    {
+      "id": 1,
+      "title": " M. K. Mishra, M. N. Medikeri, A. Venkatnathan, and S. Mahalakshmi, Characterization of Shape and Auger resonances using the Dilated one Electron Propagator Method, Mol. Phys., 94, 127 (1998). ",
+      "link": "https://www.tandfonline.com/doi/abs/10.1080/002689798168411"
     }
   ]
 }
