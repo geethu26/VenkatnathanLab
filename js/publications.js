@@ -8,7 +8,8 @@ function createPublicationCard(pub, index) {
 
   contentDiv.innerHTML = `
     <div class="publication-number">#${pub.id}</div>
-    <div class="publication-title">${pub.title}</div>
+    <div class="publication-title ">${pub.title} <p class="publication-source">${pub.source}</p></div>
+    
     <a href="${pub.link}" class="publication-link" target="_blank">
       View Here 
       <i class="fas fa-arrow-right"></i>
@@ -44,7 +45,7 @@ function renderPublications(publications) {
 }
 
 // Load publications data
-fetch("../js/publications.json")
+fetch("../js/pub.json")
   .then((response) => response.json())
   .then((data) => {
     renderPublications(data.publications);

@@ -77,6 +77,16 @@ footer {
   margin-bottom: 1.5rem;
   line-height: 1.4;
   flex-grow: 1;
+  display: inline;
+}
+
+.publication-source {
+  font-size: 1.1rem;
+  color: rgb(24, 80, 236);
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+  flex-grow: 1;
+  display: inline;
 }
 
 /* Mobile responsiveness */

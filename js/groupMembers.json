@@ -1,0 +1,133 @@
+{
+  "currentMembers": [
+    {
+      "name": "Nayan Dey",
+      "image": "../images/group/NayanDey.jpg",
+      "info": "Ph.D Student ",
+      "email": "Email: nayan.dey@students.iiserpune.ac.in",
+      "education": "Education: IIT Patna (MSc) (2024)"
+    },
+    {
+      "name": "Dr. Uttama Mukherjee",
+      "image": "../images/group/UttamaMukherjee.jpg",
+      "info": "Post-doctoral researcher specializing in computational chemistry"
+    }
+  ],
+  "alumni": [
+    {
+      "name": "Dr. Anna Varughese",
+      "image": "../images/group/AnnaV.jpg",
+      "info": "Post Doctoral Researcher (Sept 2019 - Dec 2021)"
+    },
+    {
+      "name": "Dr. Milan Kumar",
+      "image": "../images/group/7a184423f8f8a82f001019b6deca73a8.jpg",
+      "info": "Post Doctoral Researcher (Feb 2013 to Dec 2013)"
+    },
+    {
+      "name": "S. Ardhra",
+      "image": "../images/group/63701a69da76f3f239fcdf2bfd6acf07.jpg",
+      "info": "Ph.D. Student  (August 2018 - January 2025)"
+    },
+    {
+      "name": "Prabhat Prakash",
+      "image": "../images/group/031241b6a75875f3929848841d65a4ef.jpg",
+      "info": "Research Associate (Dec 2021 to March 2022)"
+    },
+    {
+      "name": "Rakesh Pant ",
+      "image": "../images/group/3fb668b63fc836ec1e0b9d4d9e82d841.jpg",
+      "info": "Ph.D. Student (August 2013-2019) "
+    },
+    {
+      "name": "Praveen Kumar",
+      "image": "../images/group/68b63fc836ec1e0b9d4d9e82d841.jpg",
+      "info": "Former PhD Student (2018-2022), Now at Stanford University"
+    },
+    {
+      "name": "Minal More",
+      "image": "../images/group/8f1b5d2626c6cfeb22b677dfc02e1.jpg",
+      "info": "Former PhD Student (2018-2022), Now at Stanford University"
+    },
+    {
+      "name": "K. R. Ramya",
+      "image": "../images/group/b915501c14c05c0c813eed7e6440.jpg",
+      "info": "Former PhD Student (2018-2022), Now at Stanford University"
+    },
+    {
+      "name": "Anurag Prakash Sunda",
+      "image": "../images/group/a48ebdff3c6e775d9919246665f4.jpg",
+      "info": "Former PhD Student (2018-2022), Now at Stanford University"
+    },
+    {
+      "name": "Rabin Siva Dev",
+      "image": "../images/group/",
+      "info": "Former PhD Student (2018-2022), Now at Stanford University"
+    },
+    {
+      "name": "Sujeet Katre",
+      "image": "/api/placeholder/300/300",
+      "info": "Former PhD Student (2018-2022), Now at Stanford University"
+    },
+    {
+      "name": "Abhishek Kumar Soni",
+      "image": "/api/placeholder/300/300",
+      "info": "Former PhD Student (2018-2022), Now at Stanford University"
+    },
+    {
+      "name": "Akshaya K.",
+      "image": "/api/placeholder/300/300",
+      "info": "Former PhD Student (2018-2022), Now at Stanford University"
+    },
+    {
+      "name": "Rohit Kumar",
+      "image": "/api/placeholder/300/300",
+      "info": "Former PhD Student (2018-2022), Now at Stanford University"
+    },
+    {
+      "name": "Apurva Gangrade",
+      "image": "/api/placeholder/300/300",
+      "info": "Former PhD Student (2018-2022), Now at Stanford University"
+    },
+    {
+      "name": "Prachi Yadav",
+      "image": "/api/placeholder/300/300",
+      "info": "Former PhD Student (2018-2022), Now at Stanford University"
+    },
+    {
+      "name": "Tejkiran Pindi Jayakumar",
+      "image": "/api/placeholder/300/300",
+      "info": "Former PhD Student (2018-2022), Now at Stanford University"
+    },
+    {
+      "name": "Saurabh B Shivpuje",
+      "image": "/api/placeholder/300/300",
+      "info": "Former PhD Student (2018-2022), Now at Stanford University"
+    },
+    {
+      "name": "Ashish Kumar",
+      "image": "/api/placeholder/300/300",
+      "info": "Former PhD Student (2018-2022), Now at Stanford University"
+    },
+    {
+      "name": "Prema Awati",
+      "image": "/api/placeholder/300/300",
+      "info": "Former PhD Student (2018-2022), Now at Stanford University"
+    },
+    {
+      "name": "Dr. Anna Varughese",
+      "image": "/api/placeholder/300/300",
+      "info": "Former PhD Student (2018-2022), Now at Stanford University"
+    },
+    {
+      "name": "Dr. Anna Varughese",
+      "image": "/api/placeholder/300/300",
+      "info": "Former PhD Student (2018-2022), Now at Stanford University"
+    },
+    {
+      "name": "Dr. Anna Varughese",
+      "image": "/api/placeholder/300/300",
+      "info": "Former PhD Student (2018-2022), Now at Stanford University"
+    }
+  ]
+}
