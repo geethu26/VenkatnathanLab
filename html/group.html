@@ -38,7 +38,37 @@
       <div class="members-grid" id="current-members"></div>
 
       <h2 class="section-title">Alumni</h2>
-      <div class="members-grid" id="alumni"></div>
+      <div class="alumni-category">
+        <h3 class="subsection-title">Postdoctoral Researchers and Students</h3>
+        <div class="members-grid" id="postdoctoral-researchers"></div>
+      </div>
+      <div class="alumni-section">
+        <div class="alumni-category">
+          <h3 class="subsection-title">
+            Graduate Students and Undergraduate Students
+          </h3>
+          <div class="members-grid" id="graduate-students"></div>
+        </div>
+
+        <div class="alumni-category">
+          <h3 class="subsection-title">Visiting Students</h3>
+          <div class="members-grid" id="visiting-students"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- popup -->
+    <div class="modal" id="memberModal">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <div class="modal-body">
+          <img class="modal-image" src="" alt="Member" />
+          <div class="modal-info">
+            <h2 class="modal-name"></h2>
+            <div class="modal-details"></div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="../js/group.js"></script>

@@ -1,0 +1,68 @@
+{
+  "currentMembers": [
+    {
+      "name": "Nayan Dey",
+      "image": "../images/group/NayanDey.jpg",
+      "info": "Ph.D Student ",
+      "email": "Email: nayan.dey@students.iiserpune.ac.in",
+      "education": "Education: IIT Patna (MSc) (2024)"
+    },
+    {
+      "name": "Dr. Uttama Mukherjee",
+      "image": "../images/group/UttamaMukherjee.jpg",
+      "info": "Women Scientist - A (WOS-A, DST)\nResearch Topic: CO2 capture\nEmail: uttama.mukherjee@acads.iiserpune.ac.in\nEducation: M.Sc. (Organic Chemistry), St. Andrew's College (DDU Gorakhpur University, Gorakhpur, U.P., 2004 - 2006).\nPh. D.: DDU Gorakhpur University, Gorakhpur, U.P. (2014).\nExperience: \nAssistant Professor at K. B. P. College, Vashi, Navi Mumbai (2015 - 2017).\nResearch Editor (Chemical Sciences) at Crimson Interactive, Goregaon (W), Mumbai (2014 - 2015).\nResearch Chemist at TCG Lifesciences Pvt. Ltd. (formerly Chembiotek Research International) Kolkata, West Bengal (2007 - 2009)."
+    }
+  ],
+  "alumni": {
+    "graduateStudents": [
+      {
+        "name": "Rabin Siva Dev",
+        "image": "../images/group/63701a69da76f3f239fcdf2bfd6acf07.jpg",
+        "researchTopic": " Machine learning for modelling interfaces in energy storage and conversion materials.",
+        "email": "rabin.dev@students.iiserpune.ac.in"
+      },
+      {
+        "name": "Rakesh Pant",
+        "image": "../images/group/3fb668b63fc836ec1e0b9d4d9e82d841.jpg",
+        "info": "Ph.D. Student (August 2013-2019)"
+      },
+      {
+        "name": "Praveen Kumar",
+        "image": "../images/group/68b63fc836ec1e0b9d4d9e82d841.jpg",
+        "info": "Former PhD Student (2018-2022), Now at Stanford University"
+      }
+    ],
+    "visitingStudents": [
+      {
+        "name": "Apurva Gangrade",
+        "image": "../images/group/4caa392f6cec52a5ca18712eb0787b23.jpg",
+        "info": "Visiting Research Student (Ph.D.) 2019\nResearch Topic: Molecular Simulations on Membrane Materials for HT-PEM Fuel Cell Applications. \nEmail: apurvanoble@gmail.com\nEducation: \nBSc- DAVV Indore, M.P. (2011-2013)\nIntegrated MSc-PhD, IIT Bombay (2014)"
+      },
+      {
+        "name": "Prachi Yadav",
+        "image": "../images/group/71e26951b3160bdab701d89ab31dac01.jpg",
+        "info": "MS. Student \nResearch Topic: Molecular Simulations of PEM-catalyst in PEMFC. \nEmail: prachi.ry.93@gmail.com\nEducation: \nB.E.: University of Pune, Maharashtra, IN\nM. S.(Nanoengineering) : North Carolina State University, NC, USA."
+      },
+      {
+        "name": "Tejkiran Pindi Jayakumar",
+        "image": "../images/group/3a247c7523916c307cc3b3171703936d.jpg",
+        "info": "Visiting Research Student (Ph.D.)\nResearch Topic: Development of novel polymers for energy storage devices\nEmail: tejkiran1993@gmail.com\nEducation: \nPh.D.: Japan Advanced Institute of Science and Technology, Nomi, Ishikawa Prefecture, Japan (2018-) \nM.Sc.: Sri Sathya Sai Institute of Science and Technology, Prasanthi Nilayam, A.P. (2014 - 2016)\nB.Sc.: Sri Sathya Sai Institute of Science and Technology, Bengaluru, Karnataka. (2011 - 2014)."
+      },
+      {
+        "name": "Saurabh B Shivpuje",
+        "image": "../images/group/5b8d523c2919b1bacefba5e482db2c00.jpg",
+        "info": "Visiting Student (2018)\n Current Position:\nBS-MS student, IIT Bombay, Mumbai."
+      },
+      {
+        "name": "Ashish Kumar",
+        "image": "../images/group/d6bbcdce9ae9b8d1a0a4717e5fad2b36.jpg",
+        "info": "Summer Project Trainee (May – July 2012)\nCurrent Position: Technology Associate at Morgan Stanley."
+      },
+      {
+        "name": "Prema Awati",
+        "image": "../images/group/f28d09870b891a950a175c05b576fb5f.jpg",
+        "info": "Project Student (DST)\nSep 2010 to May 2012\nCurrent Position: Assistant Professor  ATRIA Institute of Technology, Hebbala,\nBangalore, India."
+      }
+    ]
+  }
+}

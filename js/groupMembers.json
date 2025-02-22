@@ -3,131 +3,179 @@
     {
       "name": "Nayan Dey",
       "image": "../images/group/NayanDey.jpg",
-      "info": "Ph.D Student ",
-      "email": "Email: nayan.dey@students.iiserpune.ac.in",
-      "education": "Education: IIT Patna (MSc) (2024)"
+      "role": "Ph.D. Student",
+      "email": "nayan.dey@students.iiserpune.ac.in",
+      "education": "IIT Patna (MSc) (2024)"
     },
     {
       "name": "Dr. Uttama Mukherjee",
       "image": "../images/group/UttamaMukherjee.jpg",
-      "info": "Post-doctoral researcher specializing in computational chemistry"
+      "role": "Women Scientist - A (WOS-A, DST)",
+      "researchTopic": "CO2 capture",
+      "email": "uttama.mukherjee@acads.iiserpune.ac.in",
+      "education": "M.Sc. (Organic Chemistry), St. Andrew's College (DDU Gorakhpur University, Gorakhpur, U.P., 2004 - 2006)\nPh.D.: DDU Gorakhpur University, Gorakhpur, U.P. (2014)",
+      "experience": "Assistant Professor at K. B. P. College, Vashi, Navi Mumbai (2015 - 2017)\nResearch Editor (Chemical Sciences) at Crimson Interactive, Goregaon (W), Mumbai (2014 - 2015)\nResearch Chemist at TCG Lifesciences Pvt. Ltd. Kolkata, West Bengal (2007 - 2009)"
     }
   ],
-  "alumni": [
-    {
-      "name": "Dr. Anna Varughese",
-      "image": "../images/group/AnnaV.jpg",
-      "info": "Post Doctoral Researcher (Sept 2019 - Dec 2021)"
-    },
-    {
-      "name": "Dr. Milan Kumar",
-      "image": "../images/group/7a184423f8f8a82f001019b6deca73a8.jpg",
-      "info": "Post Doctoral Researcher (Feb 2013 to Dec 2013)"
-    },
-    {
-      "name": "S. Ardhra",
-      "image": "../images/group/63701a69da76f3f239fcdf2bfd6acf07.jpg",
-      "info": "Ph.D. Student  (August 2018 - January 2025)"
-    },
-    {
-      "name": "Prabhat Prakash",
-      "image": "../images/group/031241b6a75875f3929848841d65a4ef.jpg",
-      "info": "Research Associate (Dec 2021 to March 2022)"
-    },
-    {
-      "name": "Rakesh Pant ",
-      "image": "../images/group/3fb668b63fc836ec1e0b9d4d9e82d841.jpg",
-      "info": "Ph.D. Student (August 2013-2019) "
-    },
-    {
-      "name": "Praveen Kumar",
-      "image": "../images/group/68b63fc836ec1e0b9d4d9e82d841.jpg",
-      "info": "Former PhD Student (2018-2022), Now at Stanford University"
-    },
-    {
-      "name": "Minal More",
-      "image": "../images/group/8f1b5d2626c6cfeb22b677dfc02e1.jpg",
-      "info": "Former PhD Student (2018-2022), Now at Stanford University"
-    },
-    {
-      "name": "K. R. Ramya",
-      "image": "../images/group/b915501c14c05c0c813eed7e6440.jpg",
-      "info": "Former PhD Student (2018-2022), Now at Stanford University"
-    },
-    {
-      "name": "Anurag Prakash Sunda",
-      "image": "../images/group/a48ebdff3c6e775d9919246665f4.jpg",
-      "info": "Former PhD Student (2018-2022), Now at Stanford University"
-    },
-    {
-      "name": "Rabin Siva Dev",
-      "image": "../images/group/",
-      "info": "Former PhD Student (2018-2022), Now at Stanford University"
-    },
-    {
-      "name": "Sujeet Katre",
-      "image": "/api/placeholder/300/300",
-      "info": "Former PhD Student (2018-2022), Now at Stanford University"
-    },
-    {
-      "name": "Abhishek Kumar Soni",
-      "image": "/api/placeholder/300/300",
-      "info": "Former PhD Student (2018-2022), Now at Stanford University"
-    },
-    {
-      "name": "Akshaya K.",
-      "image": "/api/placeholder/300/300",
-      "info": "Former PhD Student (2018-2022), Now at Stanford University"
-    },
-    {
-      "name": "Rohit Kumar",
-      "image": "/api/placeholder/300/300",
-      "info": "Former PhD Student (2018-2022), Now at Stanford University"
-    },
-    {
-      "name": "Apurva Gangrade",
-      "image": "/api/placeholder/300/300",
-      "info": "Former PhD Student (2018-2022), Now at Stanford University"
-    },
-    {
-      "name": "Prachi Yadav",
-      "image": "/api/placeholder/300/300",
-      "info": "Former PhD Student (2018-2022), Now at Stanford University"
-    },
-    {
-      "name": "Tejkiran Pindi Jayakumar",
-      "image": "/api/placeholder/300/300",
-      "info": "Former PhD Student (2018-2022), Now at Stanford University"
-    },
-    {
-      "name": "Saurabh B Shivpuje",
-      "image": "/api/placeholder/300/300",
-      "info": "Former PhD Student (2018-2022), Now at Stanford University"
-    },
-    {
-      "name": "Ashish Kumar",
-      "image": "/api/placeholder/300/300",
-      "info": "Former PhD Student (2018-2022), Now at Stanford University"
-    },
-    {
-      "name": "Prema Awati",
-      "image": "/api/placeholder/300/300",
-      "info": "Former PhD Student (2018-2022), Now at Stanford University"
-    },
-    {
-      "name": "Dr. Anna Varughese",
-      "image": "/api/placeholder/300/300",
-      "info": "Former PhD Student (2018-2022), Now at Stanford University"
-    },
-    {
-      "name": "Dr. Anna Varughese",
-      "image": "/api/placeholder/300/300",
-      "info": "Former PhD Student (2018-2022), Now at Stanford University"
-    },
-    {
-      "name": "Dr. Anna Varughese",
-      "image": "/api/placeholder/300/300",
-      "info": "Former PhD Student (2018-2022), Now at Stanford University"
-    }
-  ]
+  "alumni": {
+    "postdoctoralResearchers": [
+      {
+        "name": "Dr. Anna Varughese",
+        "image": "../images/group/AnnaV.jpg",
+        "role": "Post Doctoral Researcher",
+        "info": "Post Doctoral Researcher (Sept 2019 - Dec 2021)",
+        "researchTopic": "Computer simulations of structure and molecular transport in Ionic Liquid doped PEM",
+        "education": " Ph. D. IIT Mandi (2018)"
+      },
+      {
+        "name": "Dr. Milan Kumar",
+        "image": "../images/group/7a184423f8f8a82f001019b6deca73a8.jpg",
+        "role": "Post Doctoral Researcher",
+        "info": "Post Doctoral Researcher (Feb 2013 to Dec 2013)",
+        "currentPosition": "Associate Professor, Rajiv Gandhi Institute of Petroleum Technology, Rae Bareli, UP, India."
+      },
+      {
+        "name": "S. Ardhra",
+        "image": "../images/group/63701a69da76f3f239fcdf2bfd6acf07.jpg",
+        "role": "Ph.D. Student",
+        "info": "Ph.D. Student  (August 2018 - January 2025)",
+        "researchTopic": " Battery materials ",
+        "email": "s.ardhra@students.iiserpune.ac.in",
+        "education": "BS-MS Dual Degree (Chemistry), IISER Bhopal, (2013-2018)"
+      },
+      {
+        "name": "Prabhat Prakash",
+        "image": "../images/group/031241b6a75875f3929848841d65a4ef.jpg",
+        "role": "Research Associate",
+        "info": "Research Associate (Dec 2021 to March 2022), Ph.D. Student (August 2014- March 2020)",
+        "researchTopic": " Battery materials ",
+        "currentPosition": "Postdoc, Caltech, USA.",
+        "education": "BSc and MSc (Chemistry), Institute of Science, BHU Varanasi (2009-2014)"
+      },
+      {
+        "name": "Rakesh Pant ",
+        "image": "../images/group/3fb668b63fc836ec1e0b9d4d9e82d841.jpg",
+        "role": "Ph.D. Student (August 2013-2019) ",
+        "info": "Ph.D. Student (August 2013-2019) ",
+        "researchTopic": "Protic Ionic Liquids and Polyelectrolyte Membranes for PEM fuel cells.",
+        "currentPosition": "Postdoc at Department of Chemistry, IIT Bombay",
+        "education": "BSc (Hons) Chemistry, Kirori Mal College, University of Delhi (2008–2011); MSc Chemistry, IIT Roorkee (2011–2013)."
+      },
+      {
+        "name": "Praveen Kumar",
+        "image": "../images/group/6408f1b5d2626c6cfeb22b677dfc02e1.jpg",
+        "role": "Ph.D. Student (August 2012-2019)",
+        "info": "Ph.D. Student (August 2012-2019)",
+        "researchTopic": " Molecular Simulations of Structure and Dynamics of Neat and Hydrated Imidazolium Ionic Liquids",
+        "education": "BSc, K.K. Post Graduate College, Etawah,U.P.; MSc Chemistry, IIT Delhi (2009–2011)."
+      },
+      {
+        "name": "Minal More",
+        "image": "../images/group/aad9b915501c14c05c0c813eed7e6440.jpg",
+        "role": "Ph.D. Student (December 2009-2017)",
+        "info": "Ph.D. Student (December 2009-2017)",
+        "researchTopic": "Atomistic simulations of nanostructure and dynamics of phosphoric acid-benzimidazole systems: A fuel cell initiative",
+        "education": "  M.Sc. in Physics from BRG College, Pune (2008).",
+        "currentPosition": " Instructor, Gear Innovative International School, Bangalore, India."
+      },
+      {
+        "name": "K. R. Ramya",
+        "image": "../images/group/72f0a48ebdff3c6e775d9919246665f4.jpg",
+        "role": "Ph.D. Student (January 2010-2014)",
+        "info": "Ph.D. Student (January 2010-2014)",
+        "researchTopic": " Electronic structure characterization of molecular interactions in clathrate hydrates.",
+        "education": "M. Sc. (Physics), Meenakshi College for Women, Chennai. (2007-2009).",
+        "currentPosition": "Postdoc, University of Paderborn, Germany. "
+      },
+      {
+        "name": "Anurag Prakash Sunda",
+        "image": "../images/group/21a1e0b25ce5c4590efb0d1b02b4de8c.jpg",
+        "role": "Ph.D. Student (January 2010-2014)",
+        "info": "Ph.D. Student (January 2010-2014)",
+        "researchTopic": " Atomistic Investigation of Polymer Electrolyte Membrane Nanostructure and Dynamics of Molecular Transport in Fuel Cells.",
+        "education": "M. Sc. (Physical Chemistry): Department of Chemistry, University of Rajasthan, Jaipur, 2006-2008.",
+        "currentPosition": "Assistant Professor (DST-INSPIRE Faculty) Department of Chemistry, Central University of Rajasthan."
+      }
+    ],
+    "graduateStudents": [
+      {
+        "name": "Rabin Siva Dev",
+        "image": "../images/group/8132c86efe47b6c59d25a08e8e662ee8.jpg",
+        "researchTopic": " Machine learning for modelling interfaces in energy storage and conversion materials.",
+        "email": "rabin.dev@students.iiserpune.ac.in"
+      },
+      {
+        "name": "Sujeet Katre",
+        "image": "../images/group/58aab58fe7e06fa04ad619aee4a40e62.jpg",
+        "researchTopic": " Computational simulations of battery electrolytes.",
+        "email": "sujeet.katre@students.iiserpune.ac.in"
+      },
+      {
+        "name": "Abhishek Kumar Soni",
+        "image": "../images/group/843f439bb547f86189c707d8e16f887a.jpg",
+        "currentPosition": "PhD Researcher at NUS Singapore."
+      },
+      {
+        "name": "Akshaya K.",
+        "image": "../images/group/f372cf46b631ec34517094a3c2fca128.jpg",
+        "currentPosition": "PhD Researcher at Uppsala University."
+      },
+      {
+        "name": "Rohit Kumar",
+        "image": "../images/group/b73b7a37cb6071516612dea0b7e288d2.jpg",
+        "researchTopic": " Theoretical (Conceptual DFT) and Computational study on Gas Hydrates.",
+        "currentPosition": "Global Supply- Chain Manager at Bloom Chem Ag."
+      }
+    ],
+    "visitingStudents": [
+      {
+        "name": "Apurva Gangrade",
+        "image": "../images/group/4caa392f6cec52a5ca18712eb0787b23.jpg",
+        "role": "Visiting Research Student",
+        "info": "Visiting Research Student (Ph.D.) 2019",
+        "researchTopic": "Molecular Simulations on Membrane Materials for HT-PEM Fuel Cell Applications",
+        "email": "apurvanoble@gmail.com",
+        "education": "BSc- DAVV Indore, M.P. (2011-2013); Integrated MSc-PhD, IIT Bombay (2014)"
+      },
+      {
+        "name": "Prachi Yadav",
+        "image": "../images/group/71e26951b3160bdab701d89ab31dac01.jpg",
+        "role": "MS Student",
+        "info": "MS. Student",
+        "researchTopic": "Molecular Simulations of PEM-catalyst in PEMFC",
+        "email": "prachi.ry.93@gmail.com",
+        "education": "B.E.: University of Pune, Maharashtra, IN\nM. S.(Nanoengineering) : North Carolina State University, NC, USA"
+      },
+      {
+        "name": "Tejkiran Pindi Jayakumar",
+        "image": "../images/group/3a247c7523916c307cc3b3171703936d.jpg",
+        "role": "Visiting Research Student (Ph.D.)",
+        "info": "Visiting Research Student (Ph.D.)",
+        "researchTopic": "Development of novel polymers for energy storage devices",
+        "email": "tejkiran1993@gmail.com",
+        "education": "Ph.D.: Japan Advanced Institute of Science and Technology, Nomi, Ishikawa Prefecture, Japan (2018-)\nM.Sc.: Sri Sathya Sai Institute of Science and Technology, Prasanthi Nilayam, A.P. (2014 - 2016)\nB.Sc.: Sri Sathya Sai Institute of Science and Technology, Bengaluru, Karnataka. (2011 - 2014)"
+      },
+      {
+        "name": "Saurabh B Shivpuje",
+        "image": "../images/group/5b8d523c2919b1bacefba5e482db2c00.jpg",
+        "role": "Visiting Student",
+        "info": "Visiting Student (2018)",
+        "currentPosition": "BS-MS student, IIT Bombay, Mumbai"
+      },
+      {
+        "name": "Ashish Kumar",
+        "image": "../images/group/d6bbcdce9ae9b8d1a0a4717e5fad2b36.jpg",
+        "role": "Summer Project Trainee",
+        "info": "Summer Project Trainee (May – July 2012)",
+        "currentPosition": "Technology Associate at Morgan Stanley"
+      },
+      {
+        "name": "Prema Awati",
+        "image": "../images/group/f28d09870b891a950a175c05b576fb5f.jpg",
+        "role": "Project Student (DST)",
+        "info": "Project Student (DST)\nSep 2010 to May 2012",
+        "currentPosition": "Assistant Professor ATRIA Institute of Technology, Hebbala, Bangalore, India"
+      }
+    ]
+  }
 }
