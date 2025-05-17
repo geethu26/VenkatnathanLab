@@ -1,13 +1,6 @@
 {
   "currentMembers": [
     {
-      "name": "Nayan Dey",
-      "image": "../images/group/NayanDey.jpg",
-      "role": "Ph.D. Student",
-      "email": "nayan.dey@students.iiserpune.ac.in",
-      "education": "IIT Patna (MSc) (2024)"
-    },
-    {
       "name": "Dr. Uttama Mukherjee",
       "image": "../images/group/UttamaMukherjee.jpg",
       "role": "Women Scientist - A (WOS-A, DST)",
@@ -168,14 +161,14 @@
         "role": "Summer Project Trainee",
         "info": "Summer Project Trainee (May – July 2012)",
         "currentPosition": "Technology Associate at Morgan Stanley"
-      },
-      {
-        "name": "Prema Awati",
-        "image": "../images/group/f28d09870b891a950a175c05b576fb5f.jpg",
-        "role": "Project Student (DST)",
-        "info": "Project Student (DST)\nSep 2010 to May 2012",
-        "currentPosition": "Assistant Professor ATRIA Institute of Technology, Hebbala, Bangalore, India"
       }
-    ]
+    ],
+    "projectStudents": {
+      "name": "Prema Awati",
+      "image": "../images/group/f28d09870b891a950a175c05b576fb5f.jpg",
+      "role": "Project Student (DST)",
+      "info": "Project Student (DST)\nSep 2010 to May 2012",
+      "currentPosition": "Assistant Professor ATRIA Institute of Technology, Hebbala, Bangalore, India"
+    }
   }
 }

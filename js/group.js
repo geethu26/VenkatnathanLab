@@ -1,58 +1,27 @@
-function createMemberCard(member) {
+function createMemberItem(member) {
   return `
-    <div class="member-card" data-member='${JSON.stringify(member)}'>
-      <img src="${member.image}" alt="${member.name}" class="member-image">
+    <div class="member-item">
+      <img src="${member.image}" alt="${
+    member.name
+  }" class="member-image" onerror="this.src='../images/default-profile.jpg'">
       <div class="member-info">
         <h3 class="member-name">${member.name}</h3>
-        <p class="member-role">${member.role || ""}</p>
+        <div class="member-details">
+          ${member.role ? `<p><strong>Role:</strong> ${member.role}</p>` : ""}
+          ${
+            member.currentPosition
+              ? `<p><strong>Current Position:</strong> ${member.currentPosition}</p>`
+              : ""
+          }
+          ${
+            member.researchTopic
+              ? `<p><strong>Research Topic:</strong> ${member.researchTopic}</p>`
+              : ""
+          }
+        </div>
       </div>
     </div>
   `;
-}
-
-function createModalContent(member) {
-  const details = [
-    { label: "Role", value: member.role },
-    { label: "Info", value: member.info },
-    { label: "Research Topic", value: member.researchTopic },
-    { label: "Email", value: member.email },
-    { label: "Education", value: member.education },
-    { label: "Experience", value: member.experience },
-    { label: "Current Position", value: member.currentPosition },
-  ];
-
-  return details
-    .filter((detail) => detail.value)
-    .map((detail) => `<p><strong>${detail.label}:</strong> ${detail.value}</p>`)
-    .join("");
-}
-
-function initializeModal() {
-  const modal = document.getElementById("memberModal");
-  const closeButton = modal.querySelector(".close-button");
-  const modalImage = modal.querySelector(".modal-image");
-  const modalName = modal.querySelector(".modal-name");
-  const modalDetails = modal.querySelector(".modal-details");
-
-  // Close modal when clicking the close button or outside the modal
-  closeButton.onclick = () => (modal.style.display = "none");
-  window.onclick = (event) => {
-    if (event.target === modal) {
-      modal.style.display = "none";
-    }
-  };
-
-  // Add click handlers to all member cards
-  document.querySelectorAll(".member-card").forEach((card) => {
-    card.addEventListener("click", () => {
-      const member = JSON.parse(card.dataset.member);
-      modalImage.src = member.image;
-      modalImage.alt = member.name;
-      modalName.textContent = member.name;
-      modalDetails.innerHTML = createModalContent(member);
-      modal.style.display = "block";
-    });
-  });
 }
 
 async function loadMembersData() {
@@ -65,38 +34,51 @@ async function loadMembersData() {
 
     // Render current members
     document.getElementById("current-members").innerHTML = data.currentMembers
-      .map((member) => createMemberCard(member))
+      .map((member) => createMemberItem(member))
       .join("");
+
+    // Separate PhD students from postdoctoral researchers
+    const phdStudents = data.alumni.postdoctoralResearchers.filter(
+      (member) =>
+        member.role.includes("Ph.D. Student") ||
+        member.role.includes("Research Associate")
+    );
+    const postDocs = data.alumni.postdoctoralResearchers.filter(
+      (member) =>
+        !member.role.includes("Ph.D. Student") &&
+        !member.role.includes("Research Associate")
+    );
 
     // Render alumni sections
     const alumniSections = {
+      "postdoctoral-researchers": postDocs,
+      "phd-students": phdStudents,
       "graduate-students": data.alumni.graduateStudents,
-      "undergraduate-students": data.alumni.undergraduateStudents,
-      "postdoctoral-researchers": data.alumni.postdoctoralResearchers,
       "visiting-students": data.alumni.visitingStudents,
+      "project-students": Array.isArray(data.alumni.projectStudents)
+        ? data.alumni.projectStudents
+        : [data.alumni.projectStudents],
     };
 
     Object.entries(alumniSections).forEach(([sectionId, members]) => {
       const sectionElement = document.getElementById(sectionId);
       if (sectionElement && members) {
         sectionElement.innerHTML = members
-          .map((member) => createMemberCard(member))
+          .map((member) => createMemberItem(member))
           .join("");
       }
     });
-
-    // Initialize modal functionality after rendering all members
-    initializeModal();
   } catch (error) {
     console.error("Error loading members data:", error);
     document.getElementById("current-members").innerHTML =
       '<p class="error">Error loading current members data</p>';
 
     const alumniSections = [
-      "graduate-students",
-      "undergraduate-students",
       "postdoctoral-researchers",
+      "phd-students",
+      "graduate-students",
       "visiting-students",
+      "project-students",
     ];
 
     alumniSections.forEach((sectionId) => {
@@ -107,11 +89,6 @@ async function loadMembersData() {
     });
   }
 }
-
-document.addEventListener("DOMContentLoaded", () => {
-  loadMembersData();
-  initializeNavigation();
-});
 
 // Hamburger menu functionality
 function initializeNavigation() {

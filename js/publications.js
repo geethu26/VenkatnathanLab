@@ -3,33 +3,25 @@ function createPublicationCard(pub, index) {
   card.className = "publication-card";
   card.style.animationDelay = `${index * 0.1}s`;
 
-  const contentDiv = document.createElement("div");
-  contentDiv.className = "publication-content";
-
-  contentDiv.innerHTML = `
+  let html = `
     <div class="publication-number">#${pub.id}</div>
-    <div class="publication-title ">${pub.title} <p class="publication-source">${pub.source}</p></div>
-    
+    <div class="publication-title">${pub.title}</div>
+    <div class="publication-source">${pub.source}</div>
     <a href="${pub.link}" class="publication-link" target="_blank">
-      View Here 
+      View Here
       <i class="fas fa-arrow-right"></i>
     </a>
   `;
 
-  card.appendChild(contentDiv);
-
   if (pub.image) {
-    const imageContainer = document.createElement("div");
-    imageContainer.className = "publication-image-container";
-    imageContainer.innerHTML = `
-      <img src="${pub.image}" alt="Publication ${pub.id}" class="publication-image">
+    html += `
+      <div class="publication-image-container">
+        <img src="${pub.image}" alt="Publication ${pub.id}" class="publication-image">
+      </div>
     `;
-    card.appendChild(imageContainer);
-  } else {
-    card.classList.add("no-image");
-    contentDiv.style.width = "100%";
   }
 
+  card.innerHTML = html;
   return card;
 }
 
@@ -55,7 +47,6 @@ fetch("../js/pub.json")
 // For hamburger
 const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");
-const body = document.body;
 
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
