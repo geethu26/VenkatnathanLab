@@ -125,12 +125,23 @@
 
 .prev-btn {
   left: -80px;
+  height: 60px;
+  width: 30px;
+}
+.prev-btn:hover {
+  background-color: lightgray;
+  cursor: pointer;
 }
 
 .next-btn {
   right: -80px;
+  height: 60px;
+  width: 30px;
 }
-
+.next-btn:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
 .image-counter {
   position: absolute;
   bottom: -50px;
