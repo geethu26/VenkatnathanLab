@@ -1,16 +1,24 @@
 {
   "currentMembers": [
     {
-      "name": "Dr. Uttama Mukherjee",
-      "image": "../images/group/UttamaMukherjee.jpg",
-      "role": "Women Scientist - A (WOS-A, DST)",
-      "researchTopic": "CO2 capture",
-      "email": "uttama.mukherjee@acads.iiserpune.ac.in",
-      "education": "M.Sc. (Organic Chemistry), St. Andrew's College (DDU Gorakhpur University, Gorakhpur, U.P., 2004 - 2006)\nPh.D.: DDU Gorakhpur University, Gorakhpur, U.P. (2014)",
-      "experience": "Assistant Professor at K. B. P. College, Vashi, Navi Mumbai (2015 - 2017)\nResearch Editor (Chemical Sciences) at Crimson Interactive, Goregaon (W), Mumbai (2014 - 2015)\nResearch Chemist at TCG Lifesciences Pvt. Ltd. Kolkata, West Bengal (2007 - 2009)"
+      "name": "Nayan Dey",
+      "image": "../images/group/NayanDey.jpg",
+      "role": "Ph.D Student ",
+      "email": "Email: nayan.dey@students.iiserpune.ac.in",
+      "education": "Education: IIT Patna (MSc) (2024)"
     }
   ],
   "alumni": {
+    "scientist": [
+      {
+        "name": "Dr. Uttama Mukherjee",
+        "image": "../images/group/UttamaMukherjee.jpg",
+        "role": "Women Scientist - A (WOS-A, DST)",
+        "researchTopic": "CO2 capture",
+        "email": "uttama.mukherjee@acads.iiserpune.ac.in",
+        "education": "M.Sc. (Organic Chemistry), St. Andrew's College (DDU Gorakhpur University, Gorakhpur, U.P., 2004 - 2006)\nPh.D.: DDU Gorakhpur University, Gorakhpur, U.P. (2014)"
+      }
+    ],
     "postdoctoralResearchers": [
       {
         "name": "Dr. Anna Varughese",

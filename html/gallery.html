@@ -16,7 +16,7 @@
           <a href="#">Research</a>
           <a href="./group.html">Group</a>
           <a href="./publications.html">Publications</a>
-          <a href="#">Gallery</a>
+          <a href="./gallery.html">Gallery</a>
           <a href="#">News</a>
         </div>
         <button class="hamburger">
@@ -33,80 +33,150 @@
       <h1>GALLERY</h1>
     </header>
 
-    <div class="gallery">
-      <div class="gallery-item">
-        <img src="../images/gallery/2.jpg" alt="Image 1" />
-      </div>
-      <div class="gallery-item">
-        <img src="../images/gallery/3.jpg" alt="Image 1" />
-      </div>
-      <div class="gallery-item">
-        <img src="../images/gallery/4.jpg" alt="Image 1" />
-      </div>
+    <div class="gallery" id="gallery">
+      <!-- Images will be populated by JavaScript -->
+    </div>
 
-      <div class="gallery-item">
-        <img src="../images/gallery/5.jpg" alt="Image 1" />
-      </div>
-      <div class="gallery-item">
-        <img src="../images/gallery/6.jpg" alt="Image 1" />
-      </div>
-      <div class="gallery-item">
-        <img src="../images/gallery/7.jpg" alt="Image 1" />
-      </div>
-      <div class="gallery-item">
-        <img src="../images/gallery/8.jpg" alt="Image 1" />
-      </div>
-      <div class="gallery-item">
-        <img src="../images/gallery/9.jpg" alt="Image 1" />
-      </div>
-      <div class="gallery-item">
-        <img src="../images/gallery/10.jpg" alt="Image 1" />
-      </div>
-      <div class="gallery-item">
-        <img src="../images/gallery/11.jpg" alt="Image 1" />
-      </div>
-      <div class="gallery-item">
-        <img src="../images/gallery/12.jpg" alt="Image 1" />
-      </div>
-      <div class="gallery-item">
-        <img src="../images/gallery/13.jpg" alt="Image 1" />
-      </div>
-      <div class="gallery-item">
-        <img src="../images/gallery/14.jpg" alt="Image 1" />
-      </div>
-      <div class="gallery-item">
-        <img src="../images/gallery/15.jpg" alt="Image 1" />
-      </div>
-      <div class="gallery-item">
-        <img src="../images/gallery/16.jpg" alt="Image 1" />
-      </div>
-      <div class="gallery-item">
-        <img src="../images/gallery/17.jpg" alt="Image 1" />
-      </div>
-      <div class="gallery-item">
-        <img src="../images/gallery/18.jpg" alt="Image 1" />
-      </div>
-      <div class="gallery-item">
-        <img src="../images/gallery/19.jpg" alt="Image 1" />
-      </div>
-      <div class="gallery-item">
-        <img src="../images/gallery/20.jpg" alt="Image 1" />
-      </div>
-      <div class="gallery-item">
-        <img src="../images/gallery/21.jpg" alt="Image 1" />
-      </div>
-      <div class="gallery-item">
-        <img src="../images/gallery/22.jpg" alt="Image 1" />
-      </div>
-      <div class="gallery-item">
-        <img src="../images/gallery/23.jpg" alt="Image 1" />
-      </div>
-      <div class="gallery-item">
-        <img src="../images/gallery/24.jpg" alt="Image 1" />
-      </div>
-      <div class="gallery-item">
-        <img src="../images/gallery/25.jpg" alt="Image 1" />
+    <!-- Modal -->
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <button class="close-btn" id="closeBtn">&times;</button>
+        <button class="nav-btn prev-btn" id="prevBtn">&#8249;</button>
+        <img class="modal-image" id="modalImage" src="" alt="Gallery Image" />
+        <button class="nav-btn next-btn" id="nextBtn">&#8250;</button>
+        <div class="image-counter" id="imageCounter">1 / 24</div>
       </div>
     </div>
+
+    <script>
+      // Gallery images array
+      const images = [];
+      for (let i = 2; i <= 25; i++) {
+        images.push(`../images/gallery/${i}.jpg`);
+      }
+
+      let currentImageIndex = 0;
+
+      // Create gallery items
+      function createGallery() {
+        const gallery = document.getElementById("gallery");
+        images.forEach((imageSrc, index) => {
+          const galleryItem = document.createElement("div");
+          galleryItem.className = "gallery-item";
+          galleryItem.innerHTML = `<img src="${imageSrc}" alt="Gallery Image ${
+            index + 1
+          }" loading="lazy" />`;
+          galleryItem.addEventListener("click", () => openModal(index));
+          gallery.appendChild(galleryItem);
+        });
+      }
+
+      // Modal functionality
+      const modal = document.getElementById("modal");
+      const modalImage = document.getElementById("modalImage");
+      const closeBtn = document.getElementById("closeBtn");
+      const prevBtn = document.getElementById("prevBtn");
+      const nextBtn = document.getElementById("nextBtn");
+      const imageCounter = document.getElementById("imageCounter");
+
+      function openModal(index) {
+        currentImageIndex = index;
+        updateModalImage();
+        modal.classList.add("active");
+        document.body.style.overflow = "hidden";
+      }
+
+      function closeModal() {
+        modal.classList.remove("active");
+        document.body.style.overflow = "auto";
+      }
+
+      function updateModalImage() {
+        modalImage.src = images[currentImageIndex];
+        imageCounter.textContent = `${currentImageIndex + 1} / ${
+          images.length
+        }`;
+      }
+
+      function showPrevImage() {
+        currentImageIndex =
+          (currentImageIndex - 1 + images.length) % images.length;
+        updateModalImage();
+      }
+
+      function showNextImage() {
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+        updateModalImage();
+      }
+
+      // Event listeners
+      closeBtn.addEventListener("click", closeModal);
+      prevBtn.addEventListener("click", showPrevImage);
+      nextBtn.addEventListener("click", showNextImage);
+
+      // Close modal when clicking outside the image
+      modal.addEventListener("click", (e) => {
+        if (e.target === modal) {
+          closeModal();
+        }
+      });
+
+      // Keyboard navigation
+      document.addEventListener("keydown", (e) => {
+        if (!modal.classList.contains("active")) return;
+
+        switch (e.key) {
+          case "Escape":
+            closeModal();
+            break;
+          case "ArrowLeft":
+            showPrevImage();
+            break;
+          case "ArrowRight":
+            showNextImage();
+            break;
+        }
+      });
+
+      // Touch/swipe support for mobile
+      let touchStartX = 0;
+      let touchEndX = 0;
+
+      modalImage.addEventListener("touchstart", (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+      });
+
+      modalImage.addEventListener("touchend", (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+      });
+
+      function handleSwipe() {
+        const swipeThreshold = 50;
+        const diff = touchStartX - touchEndX;
+
+        if (Math.abs(diff) > swipeThreshold) {
+          if (diff > 0) {
+            showNextImage(); // Swipe left - next image
+          } else {
+            showPrevImage(); // Swipe right - previous image
+          }
+        }
+      }
+
+      // Hamburger menu functionality
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
+
+      if (hamburger && navLinks) {
+        hamburger.addEventListener("click", () => {
+          hamburger.classList.toggle("active");
+          navLinks.classList.toggle("active");
+        });
+      }
+
+      // Initialize gallery
+      document.addEventListener("DOMContentLoaded", createGallery);
+    </script>
   </body>
 </html>

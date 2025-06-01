@@ -18,6 +18,14 @@ function createMemberItem(member) {
               ? `<p><strong>Research Topic:</strong> ${member.researchTopic}</p>`
               : ""
           }
+          ${
+            member.email ? `<p><strong>Email:</strong> ${member.email}</p>` : ""
+          }
+          ${
+            member.education
+              ? `<p><strong>Education:</strong> ${member.education}</p>`
+              : ""
+          }
         </div>
       </div>
     </div>
@@ -51,6 +59,7 @@ async function loadMembersData() {
 
     // Render alumni sections
     const alumniSections = {
+      scientist: data.alumni.scientist,
       "postdoctoral-researchers": postDocs,
       "phd-students": phdStudents,
       "graduate-students": data.alumni.graduateStudents,
@@ -74,6 +83,7 @@ async function loadMembersData() {
       '<p class="error">Error loading current members data</p>';
 
     const alumniSections = [
+      "scientist",
       "postdoctoral-researchers",
       "phd-students",
       "graduate-students",
