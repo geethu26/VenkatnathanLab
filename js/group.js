@@ -1,35 +1,27 @@
 function createMemberItem(member) {
   return `
-    <div class="member-item">
-      <img src="${member.image}" alt="${
+          <div class="member-item">
+            <img src="${member.image}" alt="${
     member.name
   }" class="member-image" onerror="this.src='../images/default-profile.jpg'">
-      <div class="member-info">
-        <h3 class="member-name">${member.name}</h3>
-        <div class="member-details">
-          ${member.role ? `<p><strong>Role:</strong> ${member.role}</p>` : ""}
-          ${
-            member.currentPosition
-              ? `<p><strong>Current Position:</strong> ${member.currentPosition}</p>`
-              : ""
-          }
-          ${
-            member.researchTopic
-              ? `<p><strong>Research Topic:</strong> ${member.researchTopic}</p>`
-              : ""
-          }
-          ${
-            member.email ? `<p><strong>Email:</strong> ${member.email}</p>` : ""
-          }
-          ${
-            member.education
-              ? `<p><strong>Education:</strong> ${member.education}</p>`
-              : ""
-          }
-        </div>
-      </div>
-    </div>
-  `;
+            <div class="member-info">
+              <h3 class="member-name">${member.name}</h3>
+              <div class="member-details">
+                ${member.role ? `<p>${member.role}</p>` : ""}
+                ${
+                  member.researchTopic
+                    ? `<p><strong>Research Topic:</strong> ${member.researchTopic}</p>`
+                    : ""
+                }
+                ${
+                  member.currentPosition
+                    ? `<p><strong>Current Position:</strong> ${member.currentPosition}</p>`
+                    : ""
+                }
+              </div>
+            </div>
+          </div>
+        `;
 }
 
 async function loadMembersData() {
