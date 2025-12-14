@@ -37,7 +37,7 @@ function renderPublications(publications) {
   setupScrollReveal();
 }
 
-fetch("../js/pub.json")
+fetch("../js/publications.json")
   .then((response) => response.json())
   .then((data) => {
     renderPublications(data.publications);
