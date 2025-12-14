@@ -1,43 +1,36 @@
-:root {
-  --primary-color: #477d8c;
-  --secondary-color: #2c5364;
-  --white: #ffffff;
-  --text-color: #333333;
-  --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+/* Header consistent with other pages */
+.page-header {
+  padding: 3rem 2rem;
+  text-align: center;
+  background: var(--surface-color);
+  margin-top: 70px;
+  border-bottom: 1px solid #333;
 }
 
-.heading {
-  margin-top: 60px;
-  margin-bottom: 50px;
-  padding: 50px;
-  background-color: rgba(71, 125, 140, 0.1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 20px;
-  font-weight: 500;
-  box-shadow: #2d3748 0px 0px 10px 0px;
-}
-
-.heading h1 {
+.page-header h1 {
   font-size: 2.5rem;
-  color: var(--text-color);
-  letter-spacing: 2px;
+  color: var(--accent-color);
+  font-weight: 700;
 }
 
+/* Gallery container */
+.gallery-container {
+  max-width: 1400px;
+  margin: 3rem auto;
+  padding: 0 2rem 3rem;
+}
+
+/* Masonry gallery */
 .gallery {
-  padding: 20px;
   column-count: 4;
   column-gap: 20px;
-  max-width: 1400px;
-  margin: 0 auto;
 }
 
 .gallery-item {
   break-inside: avoid;
-  background-color: white;
+  background-color: var(--surface-color);
   margin-bottom: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
   border-radius: 8px;
@@ -45,8 +38,8 @@
 }
 
 .gallery-item:hover {
-  transform: scale(1.03);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
 }
 
 .gallery-item img {
@@ -96,19 +89,20 @@
   object-fit: contain;
   object-position: center;
   border-radius: 8px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+  background: rgba(255, 255, 255, 0.03);
 }
 
+/* Buttons */
 .close-btn {
   position: absolute;
   top: -50px;
   right: 0;
-  color: white;
+  color: var(--white);
   font-size: 30px;
   font-weight: bold;
   cursor: pointer;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.12);
   border: none;
   border-radius: 50%;
   width: 40px;
@@ -116,11 +110,29 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .close-btn:hover {
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--white);
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.4);
+  border: none;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .prev-btn {
@@ -128,31 +140,46 @@
   height: 60px;
   width: 30px;
 }
-.prev-btn:hover {
-  background-color: lightgray;
-  cursor: pointer;
-}
 
 .next-btn {
   right: -80px;
   height: 60px;
   width: 30px;
 }
-.next-btn:hover {
-  background-color: lightgray;
-  cursor: pointer;
+
+.nav-btn:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  transform: translateY(-50%) scale(1.05);
 }
+
 .image-counter {
   position: absolute;
   bottom: -50px;
   left: 50%;
   transform: translateX(-50%);
-  color: white;
-  background: rgba(0, 0, 0, 0.5);
+  color: var(--white);
+  background: rgba(0, 0, 0, 0.6);
   padding: 8px 16px;
   border-radius: 20px;
   font-size: 14px;
   backdrop-filter: blur(10px);
+}
+
+/* Loading animation (kept if you use it) */
+.loading {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: var(--white);
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* Responsive Styles */
@@ -172,38 +199,13 @@
     column-count: 2;
   }
 
-  .hamburger {
-    display: block;
+  .gallery-container {
+    padding: 0 1.5rem 2.5rem;
   }
 
   .modal-content {
     max-width: 700px;
     height: 70vh;
-  }
-}
-
-@media (max-width: 600px) {
-  .gallery {
-    column-count: 1;
-    padding: 15px;
-  }
-
-  .heading {
-    margin-top: 70px;
-    padding: 30px 20px;
-  }
-
-  .heading h1 {
-    font-size: 2rem;
-  }
-
-  .modal {
-    padding: 20px;
-  }
-
-  .modal-content {
-    max-width: 100%;
-    height: 65vh;
   }
 
   .prev-btn {
@@ -215,13 +217,23 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
+  .gallery {
+    column-count: 1;
+    padding: 0;
+  }
+
+  .gallery-container {
+    padding: 0 1rem 2rem;
+  }
+
   .modal {
-    padding: 10px;
+    padding: 20px;
   }
 
   .modal-content {
-    height: 60vh;
+    max-width: 100%;
+    height: 65vh;
   }
 
   .prev-btn {
@@ -242,19 +254,12 @@
   }
 }
 
-/* Loading animation */
-.loading {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  border: 3px solid rgba(255, 255, 255, 0.3);
-  border-radius: 50%;
-  border-top-color: white;
-  animation: spin 1s ease-in-out infinite;
-}
+@media (max-width: 480px) {
+  .modal {
+    padding: 10px;
+  }
 
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
+  .modal-content {
+    height: 60vh;
   }
 }

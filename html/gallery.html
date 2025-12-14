@@ -3,16 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Lora:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../css/home.css" />
     <link rel="stylesheet" href="../css/gallery.css" />
-    <title>Gallery</title>
+    <title>Gallery - Dr. Arun Venkatnathan</title>
   </head>
   <body>
     <nav class="nav">
       <div class="nav-container">
-        <img src="../images/iiser_logo.png" alt="logo" class="logo" />
+        <div class="logo-container">
+          <img src="../images/iiser_logo.png" alt="logo" class="logo" />
+          <div class="lab-name">Venkatnathan Labs</div>
+        </div>
         <div class="nav-links">
-          <a href="../index.html" class="nav-name">Dr. Arun Venkatnathan</a>
+          <a href="../index.html">Dr. Arun Venkatnathan</a>
           <a href="#">Research</a>
           <a href="./group.html">Group</a>
           <a href="./publications.html">Publications</a>
@@ -29,13 +40,17 @@
       </div>
     </nav>
 
-    <header class="heading">
-      <h1>GALLERY</h1>
+    <header class="page-header">
+      <div class="header-content">
+        <h1>GALLERY</h1>
+      </div>
     </header>
 
-    <div class="gallery" id="gallery">
-      <!-- Images will be populated by JavaScript -->
-    </div>
+    <main class="gallery-container">
+      <div class="gallery" id="gallery">
+        <!-- Images populated by JavaScript -->
+      </div>
+    </main>
 
     <!-- Modal -->
     <div class="modal" id="modal">
@@ -49,7 +64,6 @@
     </div>
 
     <script>
-      // Gallery images array
       const images = [];
       for (let i = 2; i <= 25; i++) {
         images.push(`../images/gallery/${i}.jpg`);
@@ -57,7 +71,6 @@
 
       let currentImageIndex = 0;
 
-      // Create gallery items
       function createGallery() {
         const gallery = document.getElementById("gallery");
         images.forEach((imageSrc, index) => {
@@ -71,7 +84,6 @@
         });
       }
 
-      // Modal functionality
       const modal = document.getElementById("modal");
       const modalImage = document.getElementById("modalImage");
       const closeBtn = document.getElementById("closeBtn");
@@ -109,22 +121,18 @@
         updateModalImage();
       }
 
-      // Event listeners
       closeBtn.addEventListener("click", closeModal);
       prevBtn.addEventListener("click", showPrevImage);
       nextBtn.addEventListener("click", showNextImage);
 
-      // Close modal when clicking outside the image
       modal.addEventListener("click", (e) => {
         if (e.target === modal) {
           closeModal();
         }
       });
 
-      // Keyboard navigation
       document.addEventListener("keydown", (e) => {
         if (!modal.classList.contains("active")) return;
-
         switch (e.key) {
           case "Escape":
             closeModal();
@@ -138,7 +146,6 @@
         }
       });
 
-      // Touch/swipe support for mobile
       let touchStartX = 0;
       let touchEndX = 0;
 
@@ -157,14 +164,13 @@
 
         if (Math.abs(diff) > swipeThreshold) {
           if (diff > 0) {
-            showNextImage(); // Swipe left - next image
+            showNextImage();
           } else {
-            showPrevImage(); // Swipe right - previous image
+            showPrevImage();
           }
         }
       }
 
-      // Hamburger menu functionality
       const hamburger = document.querySelector(".hamburger");
       const navLinks = document.querySelector(".nav-links");
 
@@ -175,7 +181,6 @@
         });
       }
 
-      // Initialize gallery
       document.addEventListener("DOMContentLoaded", createGallery);
     </script>
   </body>

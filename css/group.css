@@ -1,86 +1,52 @@
-:root {
-  --primary-color: #3a8fb7; /* Brighter blue */
-  --secondary-color: #1e4e6a; /* Deeper blue */
-  --accent-color: #55c2da; /* Teal accent */
-  --white: #ffffff;
-  --off-white: #f5f9fa; /* Subtle background */
-  --text-color: #2d3748; /* Darker text for better readability */
-  --light-gray: #e2eef2; /* For subtle borders */
+/* Page Header */
+.page-header {
+  padding: 3rem 2rem 3rem;
+  text-align: center;
+  background: var(--surface-color);
+  margin-top: 70px;
+  border-bottom: 1px solid #333;
 }
 
-.heading {
-  margin-top: 60px;
-  margin-bottom: 50px;
-  padding: 50px;
-  background-color: rgba(71, 125, 140, 0.1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 20px;
-  font-weight: 500;
-  box-shadow: #2d3748 0px 0px 10px 0px;
+.page-header h1 {
+  font-size: 2.5rem;
+  color: var(--accent-color);
+  font-weight: 700;
 }
 
-.container {
-  max-width: 1000px;
-  margin: 60px auto 40px;
-  padding: 0 20px;
+/* Group Container */
+.group-container {
+  max-width: 1100px;
+  margin: 3rem auto;
+  padding: 0 2rem;
+}
+
+/* Section Styles */
+.section {
+  margin-bottom: 4rem;
 }
 
 .section-title {
-  font-size: 2.5rem;
-  color: var(--primary-color);
+  font-size: 2.2rem;
+  color: var(--accent-color);
   text-align: center;
-  margin-bottom: 3rem;
-  position: relative;
-  padding-bottom: 1rem;
-}
-
-.section-title::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100px;
-  height: 3px;
-  background: linear-gradient(
-    90deg,
-    var(--secondary-color),
-    var(--accent-color)
-  );
-  border-radius: 3px;
+  margin-bottom: 2rem;
+  font-weight: 700;
 }
 
 .subsection-title {
   font-size: 1.8rem;
-  color: var(--secondary-color);
-  margin: 2rem 0;
+  color: var(--primary-text-color);
+  margin: 2rem 0 1rem;
   text-align: center;
-  position: relative;
-  padding-bottom: 0.5rem;
+  font-weight: 600;
 }
 
-.subsection-title::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60px;
-  height: 2px;
-  background: var(--accent-color);
-  border-radius: 2px;
-}
-
+/* Alumni Section */
 .alumni-section {
   margin-top: 2rem;
 }
 
-.alumni-category {
-  margin-bottom: 4rem;
-}
-
+/* Members List */
 .members-list {
   display: flex;
   flex-direction: column;
@@ -89,29 +55,28 @@
 }
 
 .member-item {
+  background: var(--surface-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
   gap: 2rem;
-  padding: 1.5rem;
-  background: var(--white);
-  border-radius: 8px;
-  border-bottom: 5px solid var(--light-gray);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .member-item:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-  background: #d1e5ea;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
 }
 
 .member-image {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
   object-fit: cover;
-  border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  border: 3px solid var(--accent-color);
+  box-shadow: 0 0 15px rgba(187, 134, 252, 0.3);
 }
 
 .member-info {
@@ -119,15 +84,15 @@
 }
 
 .member-name {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: var(--primary-color);
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--primary-text-color);
   margin-bottom: 0.5rem;
 }
 
 .member-details {
   font-size: 1rem;
-  color: var(--text-color);
+  color: var(--secondary-text-color);
   line-height: 1.6;
 }
 
@@ -136,47 +101,31 @@
 }
 
 .member-details strong {
-  color: var(--secondary-color);
+  color: var(--accent-color);
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-  .container {
-    margin-top: 80px;
-    padding: 0 15px;
-  }
-
-  .section-title {
-    font-size: 2rem;
-  }
-
-  .subsection-title {
-    font-size: 1.5rem;
-  }
-
   .member-item {
     flex-direction: column;
-    align-items: flex-start;
-    padding: 1rem;
+    align-items: center;
+    text-align: center;
   }
-
   .member-image {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
   }
-
   .member-name {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
   }
-
   .member-details {
     font-size: 0.9rem;
   }
-
-  .heading {
-    margin-top: 80px;
-    padding: 30px;
-    font-size: 18px;
+  .section-title {
+    font-size: 2rem;
+  }
+  .subsection-title {
+    font-size: 1.5rem;
   }
 }
 
@@ -184,20 +133,16 @@
   .section-title {
     font-size: 1.8rem;
   }
-
   .subsection-title {
     font-size: 1.3rem;
   }
-
   .member-image {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
   }
-
   .member-name {
     font-size: 1.1rem;
   }
-
   .member-details {
     font-size: 0.85rem;
   }
