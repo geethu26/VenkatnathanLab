@@ -2,8 +2,8 @@ function createMemberItem(member) {
   return `
           <div class="member-item">
             <img src="${member.image}" alt="${
-    member.name
-  }" class="member-image" onerror="this.src='../images/default-profile.jpg'">
+              member.name
+            }" class="member-image" onerror="this.src='../images/default-profile.jpg'">
             <div class="member-info">
               <h3 class="member-name">${member.name}</h3>
               <div class="member-details">
@@ -11,6 +11,11 @@ function createMemberItem(member) {
                 ${
                   member.researchTopic
                     ? `<p><strong>Research Topic:</strong> ${member.researchTopic}</p>`
+                    : ""
+                }
+                ${
+                  member.education
+                    ? `<p><strong>Education:</strong> ${member.education}</p>`
                     : ""
                 }
                 ${
@@ -41,12 +46,12 @@ async function loadMembersData() {
     const phdStudents = data.alumni.postdoctoralResearchers.filter(
       (member) =>
         member.role.includes("Ph.D. Student") ||
-        member.role.includes("Research Associate")
+        member.role.includes("Research Associate"),
     );
     const postDocs = data.alumni.postdoctoralResearchers.filter(
       (member) =>
         !member.role.includes("Ph.D. Student") &&
-        !member.role.includes("Research Associate")
+        !member.role.includes("Research Associate"),
     );
 
     // Render alumni sections

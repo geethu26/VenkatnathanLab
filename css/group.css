@@ -60,9 +60,11 @@
   padding: 1.5rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 2rem;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
 }
 
 .member-item:hover {
@@ -71,12 +73,20 @@
 }
 
 .member-image {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
+  width: 180px;
+  height: 220px;
+  border-radius: 8px;
   object-fit: cover;
-  border: 3px solid var(--accent-color);
-  box-shadow: 0 0 15px rgba(187, 134, 252, 0.3);
+  border: 2px solid var(--accent-color);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.member-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7);
 }
 
 .member-info {
@@ -112,8 +122,8 @@
     text-align: center;
   }
   .member-image {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 180px;
   }
   .member-name {
     font-size: 1.2rem;
@@ -137,8 +147,8 @@
     font-size: 1.3rem;
   }
   .member-image {
-    width: 100px;
-    height: 100px;
+    width: 130px;
+    height: 160px;
   }
   .member-name {
     font-size: 1.1rem;

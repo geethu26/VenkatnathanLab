@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News - Dr. Arun Venkatnathan</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Lora:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/home.css" />
+    <link rel="stylesheet" href="../css/news.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav-container">
+        <div class="logo-container">
+          <img src="../images/iiser_logo.png" alt="logo" class="logo" />
+          <div class="lab-name">Venkatnathan Labs</div>
+        </div>
+        <div class="nav-links">
+          <a href="../index.html">Dr. Arun Venkatnathan</a>
+          <a href="#">Research</a>
+          <a href="./group.html">Group</a>
+          <a href="./publications.html">Publications</a>
+          <a href="./gallery.html">Gallery</a>
+          <a href="./news.html">News</a>
+        </div>
+        <button class="hamburger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
+      </div>
+    </nav>
+
+    <header class="page-header">
+      <div class="header-content">
+        <h1>NEWS</h1>
+      </div>
+    </header>
+
+    <main class="news-container">
+      <section class="news-list">
+        <!-- Article 1 -->
+        <article class="news-card reveal">
+          <div class="news-date">
+            <i class="fas fa-calendar-alt"></i> April 2024
+          </div>
+          <div class="news-meta">
+            <span class="news-source">The Bridge Chronicle</span>
+            <span class="news-tag">Battery safety</span>
+          </div>
+          <h2 class="news-title">
+            Researchers make breakthrough in making phone batteries safer
+          </h2>
+          <p class="news-summary">
+            Coverage of work on safer lithium-ion batteries using advanced
+            electrolyte design, highlighting contributions from Prof. Arun
+            Venkatnathan’s group.
+          </p>
+          <a
+            href="https://www.thebridgechronicle.com/pune/researchers-make-breakthrough-making-phone-batteries-safer-16848"
+            class="news-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Read article <i class="fas fa-arrow-right"></i>
+          </a>
+        </article>
+
+        <!-- Article 2 -->
+        <article class="news-card reveal">
+          <div class="news-date">
+            <i class="fas fa-calendar-alt"></i> March 2024
+          </div>
+          <div class="news-meta">
+            <span class="news-source">Shaastra, IIT Madras</span>
+            <span class="news-tag">Soft solid electrolyte</span>
+          </div>
+          <h2 class="news-title">
+            Soft solid electrolyte enhances battery safety
+          </h2>
+          <p class="news-summary">
+            News brief on a soft co-crystalline solid electrolyte that improves
+            thermal stability and safety in lithium-ion batteries, featuring the
+            Venkatnathan lab.
+          </p>
+          <a
+            href="https://shaastramag.iitm.ac.in/news-brief/soft-solid-electrolyte-enhances-battery-safety"
+            class="news-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Read article <i class="fas fa-arrow-right"></i>
+          </a>
+        </article>
+      </section>
+    </main>
+
+    <script>
+      // Hamburger menu
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
+      if (hamburger && navLinks) {
+        hamburger.addEventListener("click", () => {
+          hamburger.classList.toggle("active");
+          navLinks.classList.toggle("active");
+        });
+      }
+
+      // Scroll Reveal Animation
+      const revealElements = document.querySelectorAll(".reveal");
+
+      const revealOnScroll = () => {
+        const windowHeight = window.innerHeight;
+        for (let i = 0; i < revealElements.length; i++) {
+          const elementTop = revealElements[i].getBoundingClientRect().top;
+          const elementVisible = 100;
+
+          if (elementTop < windowHeight - elementVisible) {
+            revealElements[i].classList.add("visible");
+          }
+        }
+      };
+
+      window.addEventListener("scroll", revealOnScroll);
+      revealOnScroll(); // Initial check
+    </script>
+  </body>
+</html>
