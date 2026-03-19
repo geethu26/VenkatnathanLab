@@ -22,7 +22,13 @@
         </div>
         <div class="nav-links">
           <a href="index.html">Dr. Arun Venkatnathan</a>
-          <a href="#">Research</a>
+          <div class="nav-dropdown">
+            <a href="#">Research <i class="fas fa-chevron-down" style="font-size: 0.7rem;"></i></a>
+            <div class="dropdown-menu">
+              <a href="html/research/energy_storage.html">Materials for Energy Storage</a>
+              <a href="html/research/co2_capture.html">Materials for CO2 Capture</a>
+            </div>
+          </div>
           <a href="html/group.html">Group</a>
           <a href="html/publications.html">Publications</a>
           <a href="html/gallery.html">Gallery</a>
@@ -138,15 +144,32 @@
       </div>
     </div>
 
+    <footer class="footer">
+      <div class="footer-bottom">
+        <p>&copy; 2024 Venkatnathan Lab. All rights reserved.</p>
+      </div>
+    </footer>
+
     <script>
       // For hamburger menu
       const hamburger = document.querySelector(".hamburger");
       const navLinks = document.querySelector(".nav-links");
+      const navDropdown = document.querySelector(".nav-dropdown");
 
       hamburger.addEventListener("click", () => {
         hamburger.classList.toggle("active");
         navLinks.classList.toggle("active");
       });
+
+      // Mobile dropdown toggle
+      if (navDropdown) {
+        navDropdown.querySelector(":scope > a").addEventListener("click", (e) => {
+          if (window.innerWidth <= 768) {
+            e.preventDefault();
+            navDropdown.classList.toggle("open");
+          }
+        });
+      }
 
       // Scroll Reveal Animation
       const revealElements = document.querySelectorAll(".reveal");

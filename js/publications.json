@@ -1,24 +1,34 @@
 {
   "publications": [
     {
+      "id": 56,
+      "title": "N.Dey, A.Venkatnathan, S.Ogale, and A.Bano, “Strategic Screening of Dopants for Na0.67Ni0.33Mn0.67O2 Cathodes: A Computational Roadmap for Sodium-Ion Battery Innovation.” Small (2026): e13165. ",
+      "image": "..//images//publications//pub56.jpeg",
+      "link": "https://onlinelibrary.wiley.com/doi/10.1002/smll.202513165"
+    },
+    {
       "id": 55,
       "title": "Uttama Mukherjee, Prabhat Prakash and Arun Venkatnathan, Structure and dynamics of CO2 absorption in aqueous potassium lysinate solutions, J Mol. Liquids, 432, 127749 (2025) ",
+      "image": "..//images//publications//pub55.jpeg",
       "link": "https://www.sciencedirect.com/science/article/abs/pii/S0167732225009262?via%3Dihub"
     },
     {
       "id": 54,
       "title": "Shylendran Ardhra, Prabhat Prakash, Rabin Siva Dev, Stephanie L. Wunder, Arun Venkatnathan , Interatomic Interactions and Ion-Transport in a Polyoligomeric Silsesquioxane-based Multi-Ionic Salt Electrolyte for Lithium-Ion Batteries, ChemPhysChem  (2025) ",
+      "image": "..//images//publications//pub54.jpeg",
       "link": "https://chemistry-europe.onlinelibrary.wiley.com/doi/abs/10.1002/cphc.202400983"
     },
     {
       "id": 53,
       "title": "Birane Fall,Laura A. Sonnenberg, Jordan R. Aguirre, Shujit Chandra Paul, Prabhat Prakash, Arun Venkatnathan, Mounesha N. Garaga, William A. Goddard III, Steven G. Greenbaum, Michael J. Zdilla, Stephanie L. Wunder , Effect of Anion Mass on Conductivity and Lithium-Ion Transference Number in the Isomorphic Cocrystals (Adpn)2LiXF6 (Adpn = Adiponitrile, X = P, As, Sb), Chem. Mater. 2025. ",
+      "image": "..//images//publications//pub53.jpeg",
       "link": "https://pubs.acs.org/doi/10.1021/acs.chemmater.4c01374"
     },
 
     {
       "id": 52,
       "title": "Prabhat Prakash, Birane Fall, Jordan Aguirre, Laura A Sonnenberg, Parameswara Rao Chinnam, Sumanth Chereddy, Dmitriy A. Dikin, Arun Venkatnathan, Stephanie L Wunder, Michael J Zdilla , A soft co-crystalline solid electrolyte for lithium-ion batteries,  Nature Materials 22, 627-635(2023) . ",
+      "image": "..//images//publications//pub52.jpeg",
       "link": "https://www.nature.com/articles/s41563-023-01508-1"
     },
     {

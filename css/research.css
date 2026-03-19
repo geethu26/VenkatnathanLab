@@ -1,0 +1,227 @@
+/* Page Header - Consistent across pages */
+.page-header {
+  padding: 8rem 2rem 4rem;
+  text-align: center;
+  background: var(--surface-color);
+  margin-top: 0; /* Overlap with nav */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+
+.page-header h1 {
+  font-size: 3rem;
+  background: var(--header-bg);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+/* Research Container & Content Layout */
+.research-container {
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+  counter-reset: subsection;
+  display: grid;
+  gap: 4rem; /* Spacing between sections */
+}
+
+/* Introduction Section (Description + Main Image) 
+   We will target these specifically in HTML if needed, but here we style generically 
+*/
+.research-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  background: var(--surface-color);
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.research-description {
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+  border-left: none;
+  position: relative;
+}
+
+.research-description p {
+  text-align: left;
+  font-size: 1.15rem;
+  color: var(--secondary-text-color);
+  line-height: 1.8;
+}
+
+.research-image {
+  width: 100%;
+  margin: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.research-image:hover {
+  transform: scale(1.02);
+}
+
+.research-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 0; /* Handled by container */
+  box-shadow: none;
+}
+
+/* Image grid if multiple images */
+.research-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+/* Subsections - Cards with nice depth */
+.research-subsection {
+  background: var(--surface-color);
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.03);
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.research-subsection:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+  border-top: 3px solid var(--accent-color);
+}
+
+.research-subsection::before {
+  /* Colorful accent line or dot */
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent-color), var(--accent-color-dark));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.research-subsection:hover::before {
+  opacity: 1;
+}
+
+.research-subsection h2 {
+  font-size: 1.8rem;
+  color: var(--primary-text-color);
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+}
+
+/* Underline effect for H2 */
+.research-subsection h2::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: var(--accent-color);
+  margin-top: 0.5rem;
+  border-radius: 2px;
+}
+
+.research-subsection p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--secondary-text-color);
+  margin-bottom: 2rem;
+}
+
+/* References styling */
+.reference {
+  font-size: 0.9rem;
+  color: var(--secondary-text-color);
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid var(--accent-color);
+  opacity: 0.9;
+  font-style: italic;
+}
+
+.reference a {
+  color: var(--accent-color);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.reference a:hover {
+  text-decoration: underline;
+  color: var(--accent-color-dark);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .research-intro {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  
+  .research-description p {
+    text-align: center;
+  }
+}
+  transition: color 0.3s;
+  word-break: break-all;
+}
+
+.reference a:hover {
+  color: var(--primary-text-color);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .page-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .research-description,
+  .research-subsection {
+    padding: 1.5rem;
+  }
+
+  .research-subsection:nth-child(even) {
+    padding: 1.5rem;
+  }
+
+  .research-images-row {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .research-images-row .research-image img {
+    max-width: 100%;
+  }
+
+  .research-subsection::before {
+    font-size: 1.8rem;
+    top: 1rem;
+    right: 1rem;
+  }
+}

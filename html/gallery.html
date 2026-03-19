@@ -24,7 +24,20 @@
         </div>
         <div class="nav-links">
           <a href="../index.html">Dr. Arun Venkatnathan</a>
-          <a href="#">Research</a>
+          <div class="nav-dropdown">
+            <a href="#"
+              >Research
+              <i class="fas fa-chevron-down" style="font-size: 0.7rem"></i
+            ></a>
+            <div class="dropdown-menu">
+              <a href="./research/energy_storage.html"
+                >Materials for Energy Storage</a
+              >
+              <a href="./research/co2_capture.html"
+                >Materials for CO2 Capture</a
+              >
+            </div>
+          </div>
           <a href="./group.html">Group</a>
           <a href="./publications.html">Publications</a>
           <a href="./gallery.html">Gallery</a>
@@ -50,6 +63,12 @@
       </div>
     </main>
 
+    <footer class="footer">
+      <div class="footer-bottom">
+        <p>&copy; 2024 Venkatnathan Lab. All rights reserved.</p>
+      </div>
+    </footer>
+
     <!-- Modal -->
     <div class="modal" id="modal">
       <div class="modal-content">
@@ -63,7 +82,7 @@
 
     <script>
       const images = [];
-      for (let i = 2; i <= 25; i++) {
+      for (let i = 1; i <= 27; i++) {
         images.push(`../images/gallery/${i}.jpg`);
       }
 
@@ -171,12 +190,25 @@
 
       const hamburger = document.querySelector(".hamburger");
       const navLinks = document.querySelector(".nav-links");
+      const navDropdown = document.querySelector(".nav-dropdown");
 
       if (hamburger && navLinks) {
         hamburger.addEventListener("click", () => {
           hamburger.classList.toggle("active");
           navLinks.classList.toggle("active");
         });
+      }
+
+      // Mobile dropdown toggle
+      if (navDropdown) {
+        navDropdown
+          .querySelector(":scope > a")
+          .addEventListener("click", (e) => {
+            if (window.innerWidth <= 768) {
+              e.preventDefault();
+              navDropdown.classList.toggle("open");
+            }
+          });
       }
 
       document.addEventListener("DOMContentLoaded", createGallery);

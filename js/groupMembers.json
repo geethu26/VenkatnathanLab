@@ -1,6 +1,12 @@
 {
   "currentMembers": [
     {
+      "name": "Nitin Sharma",
+      "image": "../images/group/NitinSharma.jpeg",
+      "role": "MSc. student",
+      "info": "MSc. student, IISER Pune"
+    },
+    {
       "name": "Vishnu Sudarsanan",
       "image": "../images/group/Vishnu Sudarsanan.jpeg",
       "role": "Postdoctoral Researcher",

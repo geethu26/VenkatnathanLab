@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Materials for CO2 Capture - Dr. Arun Venkatnathan</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Lora:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../css/home.css" />
+    <link rel="stylesheet" href="../../css/research.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav-container">
+        <div class="logo-container">
+          <img src="../../images/iiser_logo.png" alt="logo" class="logo" />
+          <div class="lab-name">Venkatnathan Labs</div>
+        </div>
+        <div class="nav-links">
+          <a href="../../index.html">Dr. Arun Venkatnathan</a>
+          <div class="nav-dropdown">
+            <a href="#"
+              >Research
+              <i class="fas fa-chevron-down" style="font-size: 0.7rem"></i
+            ></a>
+            <div class="dropdown-menu">
+              <a href="./energy_storage.html">Materials for Energy Storage</a>
+              <a href="./co2_capture.html">Materials for CO2 Capture</a>
+            </div>
+          </div>
+          <a href="../group.html">Group</a>
+          <a href="../publications.html">Publications</a>
+          <a href="../gallery.html">Gallery</a>
+          <a href="../news.html">News</a>
+        </div>
+        <button class="hamburger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
+      </div>
+    </nav>
+
+    <header class="page-header">
+      <div class="header-content">
+        <h1>MATERIALS FOR CO2 CAPTURE</h1>
+      </div>
+    </header>
+
+    <main class="research-container">
+      <div class="research-image" style="max-width: 800px; margin: 0 auto;">
+        <img src="../../images/research/co2_capture/co2.png" alt="CO2 Capture Image 1" />
+      </div>
+
+      <section class="research-subsection">
+        <h2>Molecular Dynamics of CO2 Absorption</h2>
+        <p>
+          We investigate the molecular-level structure and dynamic mechanisms
+          which governs CO₂ absorption using first-principles calculations and
+          molecular simulations, focusing on solvent–CO₂ interactions, binding
+          motifs, and transport pathways relevant to energy and environmental
+          applications.
+        </p>
+        <div class="reference">
+          Uttama Mukherjee, Prabhat Prakash, Arun Venkatnathan, Structure and
+          dynamics of CO2 absorption in aqueous potassium lysinate solutions,
+          Journal of Molecular Liquids, 432, 2025, 127749.
+        </div>
+      </section>
+
+      <section class="research-subsection">
+        <h2>Quantum Mechanical Investigation of CO2 Reactivity</h2>
+        <p>
+          We employ density functional theory to elucidate CO₂ activation,
+          reaction pathways, and energy barriers, providing molecular-level
+          insights for carbon capture, conversion for methylpiperidines,
+          dihydrooxazole isomers.
+        </p>
+        <div class="reference">
+          Theoretical Assessment of Carbon Dioxide Reactivity in
+          Methylpiperidines: A Conformational Investigation. Uttama Mukherjee,
+          Prabhat Prakash, and Arun Venkatnathan. The Journal of Physical
+          Chemistry A 2023 127 (14), 3123-3132. DOI:
+          <a
+            href="https://doi.org/10.1021/acs.jpca.3c00406"
+            target="_blank"
+            rel="noopener noreferrer"
+            >10.1021/acs.jpca.3c00406</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-bottom">
+        <p>&copy; 2024 Venkatnathan Lab. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      // Hamburger menu
+      const hamburger = document.querySelector(".hamburger");
+      const navLinks = document.querySelector(".nav-links");
+      const navDropdown = document.querySelector(".nav-dropdown");
+
+      if (hamburger && navLinks) {
+        hamburger.addEventListener("click", () => {
+          hamburger.classList.toggle("active");
+          navLinks.classList.toggle("active");
+        });
+      }
+
+      // Mobile dropdown toggle
+      if (navDropdown) {
+        navDropdown
+          .querySelector(":scope > a")
+          .addEventListener("click", (e) => {
+            if (window.innerWidth <= 768) {
+              e.preventDefault();
+              navDropdown.classList.toggle("open");
+            }
+          });
+      }
+    </script>
+  </body>
+</html>

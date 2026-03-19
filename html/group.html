@@ -24,7 +24,20 @@
         </div>
         <div class="nav-links">
           <a href="../index.html">Dr. Arun Venkatnathan</a>
-          <a href="#">Research</a>
+          <div class="nav-dropdown">
+            <a href="#"
+              >Research
+              <i class="fas fa-chevron-down" style="font-size: 0.7rem"></i
+            ></a>
+            <div class="dropdown-menu">
+              <a href="./research/energy_storage.html"
+                >Materials for Energy Storage</a
+              >
+              <a href="./research/co2_capture.html"
+                >Materials for CO2 Capture</a
+              >
+            </div>
+          </div>
           <a href="./group.html">Group</a>
           <a href="./publications.html">Publications</a>
           <a href="./gallery.html">Gallery</a>
@@ -81,6 +94,26 @@
       </section>
     </main>
 
+    <footer class="footer">
+      <div class="footer-bottom">
+        <p>&copy; 2024 Venkatnathan Lab. All rights reserved.</p>
+      </div>
+    </footer>
+
     <script src="../js/group.js"></script>
+    <script>
+      // Mobile dropdown toggle
+      const navDropdown = document.querySelector(".nav-dropdown");
+      if (navDropdown) {
+        navDropdown
+          .querySelector(":scope > a")
+          .addEventListener("click", (e) => {
+            if (window.innerWidth <= 768) {
+              e.preventDefault();
+              navDropdown.classList.toggle("open");
+            }
+          });
+      }
+    </script>
   </body>
 </html>

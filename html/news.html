@@ -24,7 +24,20 @@
         </div>
         <div class="nav-links">
           <a href="../index.html">Dr. Arun Venkatnathan</a>
-          <a href="#">Research</a>
+          <div class="nav-dropdown">
+            <a href="#"
+              >Research
+              <i class="fas fa-chevron-down" style="font-size: 0.7rem"></i
+            ></a>
+            <div class="dropdown-menu">
+              <a href="./research/energy_storage.html"
+                >Materials for Energy Storage</a
+              >
+              <a href="./research/co2_capture.html"
+                >Materials for CO2 Capture</a
+              >
+            </div>
+          </div>
           <a href="./group.html">Group</a>
           <a href="./publications.html">Publications</a>
           <a href="./gallery.html">Gallery</a>
@@ -49,11 +62,10 @@
         <!-- Article 1 -->
         <article class="news-card reveal">
           <div class="news-date">
-            <i class="fas fa-calendar-alt"></i> April 2024
+            <i class="fas fa-calendar-alt"></i> April 2018
           </div>
           <div class="news-meta">
             <span class="news-source">The Bridge Chronicle</span>
-            <span class="news-tag">Battery safety</span>
           </div>
           <h2 class="news-title">
             Researchers make breakthrough in making phone batteries safer
@@ -76,19 +88,17 @@
         <!-- Article 2 -->
         <article class="news-card reveal">
           <div class="news-date">
-            <i class="fas fa-calendar-alt"></i> March 2024
+            <i class="fas fa-calendar-alt"></i> May 2023
           </div>
           <div class="news-meta">
             <span class="news-source">Shaastra, IIT Madras</span>
-            <span class="news-tag">Soft solid electrolyte</span>
           </div>
           <h2 class="news-title">
             Soft solid electrolyte enhances battery safety
           </h2>
           <p class="news-summary">
             News brief on a soft co-crystalline solid electrolyte that improves
-            thermal stability and safety in lithium-ion batteries, featuring the
-            Venkatnathan lab.
+            thermal stability and safety in lithium-ion batteries.
           </p>
           <a
             href="https://shaastramag.iitm.ac.in/news-brief/soft-solid-electrolyte-enhances-battery-safety"
@@ -102,15 +112,33 @@
       </section>
     </main>
 
+    <footer class="footer">
+      <div class="footer-bottom">
+        <p>&copy; 2024 Venkatnathan Lab. All rights reserved.</p>
+      </div>
+    </footer>
+
     <script>
       // Hamburger menu
       const hamburger = document.querySelector(".hamburger");
       const navLinks = document.querySelector(".nav-links");
+      const navDropdown = document.querySelector(".nav-dropdown");
       if (hamburger && navLinks) {
         hamburger.addEventListener("click", () => {
           hamburger.classList.toggle("active");
           navLinks.classList.toggle("active");
         });
+      }
+      // Mobile dropdown toggle
+      if (navDropdown) {
+        navDropdown
+          .querySelector(":scope > a")
+          .addEventListener("click", (e) => {
+            if (window.innerWidth <= 768) {
+              e.preventDefault();
+              navDropdown.classList.toggle("open");
+            }
+          });
       }
 
       // Scroll Reveal Animation

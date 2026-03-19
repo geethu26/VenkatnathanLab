@@ -1,16 +1,24 @@
-/* Page Header */
+/* Page Header - Consistent across pages */
 .page-header {
-  padding: 3rem 2rem 3rem;
+  padding: 8rem 2rem 4rem;
   text-align: center;
   background: var(--surface-color);
-  margin-top: 70px;
-  border-bottom: 1px solid #333;
+  margin-top: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05); /* No clip-path, consistent */
+  position: relative;
+  clip-path: none;
 }
 
 .page-header h1 {
-  font-size: 2.5rem;
-  color: var(--accent-color);
-  font-weight: 700;
+  font-size: 3rem;
+  background: var(--header-bg);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
 }
 
 /* Layout */
@@ -21,8 +29,8 @@
 }
 
 .news-list {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
 
@@ -31,8 +39,9 @@
   background: var(--surface-color);
   border-radius: 8px;
   padding: 2rem;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-  border-left: 4px solid var(--accent-color-dark);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-left: none;
+  border-top: 4px solid var(--accent-color-dark);
   transition:
     transform 0.3s,
     box-shadow 0.3s,
@@ -42,25 +51,27 @@
   transform: translateY(30px);
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .news-card::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: -4px;
-  width: 4px;
-  height: 0;
+  top: -4px;
+  left: 0;
+  width: 0;
+  height: 4px;
   background: linear-gradient(
-    to bottom,
+    to right,
     var(--accent-color),
     var(--accent-color-dark)
   );
-  transition: height 0.3s ease;
+  transition: width 0.4s ease;
 }
 
 .news-card:hover::before {
-  height: 100%;
+  width: 100%;
 }
 
 .news-card.visible {
@@ -78,8 +89,8 @@
 
 .news-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
-  border-color: var(--accent-color);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  border-top-color: var(--accent-color);
 }
 
 /* Date styling */
@@ -112,7 +123,7 @@
 .news-tag {
   padding: 0.15rem 0.6rem;
   border-radius: 999px;
-  background: rgba(0, 184, 212, 0.12);
+  background: rgba(9, 132, 227, 0.12);
   color: var(--accent-color);
   font-size: 0.8rem;
 }
@@ -164,5 +175,14 @@
 @media (max-width: 768px) {
   .news-container {
     padding: 0 1.5rem 2.5rem;
+  }
+
+  .news-list {
+    grid-template-columns: 1fr;
+  }
+
+  .page-header {
+    clip-path: none;
+    padding-bottom: 3rem;
   }
 }

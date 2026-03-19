@@ -1,23 +1,30 @@
-/* Header consistent with other pages */
+/* Page Header - Consistent across pages */
 .page-header {
-  padding: 3rem 2rem;
+  padding: 8rem 2rem 4rem;
   text-align: center;
   background: var(--surface-color);
-  margin-top: 70px;
-  border-bottom: 1px solid #333;
+  margin-top: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  position: relative;
 }
 
 .page-header h1 {
-  font-size: 2.5rem;
-  color: var(--accent-color);
-  font-weight: 700;
+  font-size: 3rem;
+  background: var(--header-bg);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
 }
 
 /* Gallery container */
 .gallery-container {
   max-width: 1400px;
-  margin: 3rem auto;
-  padding: 0 2rem 3rem;
+  margin: 0 auto 3rem;
+  padding: 2rem 3rem;
 }
 
 /* Masonry gallery */
@@ -30,7 +37,7 @@
   break-inside: avoid;
   background-color: var(--surface-color);
   margin-bottom: 20px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
   border-radius: 8px;
@@ -39,7 +46,7 @@
 
 .gallery-item:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
 .gallery-item img {
