@@ -158,23 +158,8 @@
   display: none;
 }
 
-/* Hamburger & Media Queries */
-.hamburger {
-  display: none;
-}
-.line {
-  width: 30px;
-  height: 3px;
-  background-color: var(--primary-text-color);
-}
-
+/* Media Queries */
 @media (max-width: 768px) {
-  .nav-links {
-    display: none;
-  }
-  .hamburger {
-    display: block;
-  }
   .publication-card {
     flex-direction: column-reverse;
     align-items: flex-start;
