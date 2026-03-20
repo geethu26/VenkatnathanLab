@@ -82,24 +82,45 @@
 
     <script>
       const images = [];
-      for (let i = 1; i <= 27; i++) {
-        images.push(`../images/gallery/${i}.jpg`);
-      }
-
-      let currentImageIndex = 0;
+      const totalPossibleImages = 50;
 
       function createGallery() {
         const gallery = document.getElementById("gallery");
-        images.forEach((imageSrc, index) => {
-          const galleryItem = document.createElement("div");
-          galleryItem.className = "gallery-item";
-          galleryItem.innerHTML = `<img src="${imageSrc}" alt="Gallery Image ${
-            index + 1
-          }" loading="lazy" />`;
-          galleryItem.addEventListener("click", () => openModal(index));
-          gallery.appendChild(galleryItem);
-        });
+        let loadedCount = 0;
+
+        for (let i = 1; i <= totalPossibleImages; i++) {
+          const img = new Image();
+          const src = `../images/gallery/${i}.jpg`;
+          
+          img.onload = function() {
+            images.push(src);
+            const index = images.length - 1;
+            
+            const galleryItem = document.createElement("div");
+            galleryItem.className = "gallery-item";
+            galleryItem.innerHTML = `<img src="${src}" alt="Gallery Image" loading="lazy" />`;
+            galleryItem.addEventListener("click", () => {
+              const currentIdx = images.indexOf(src);
+              openModal(currentIdx);
+            });
+            gallery.appendChild(galleryItem);
+          };
+          
+          img.onerror = function() {
+            // Image doesn't exist, skip it silentlly
+          };
+          
+          img.src = src;
+        }
       }
+
+      function updateCounterDisplay() {
+        if (modal.classList.contains("active")) {
+          imageCounter.textContent = `${currentImageIndex + 1} / ${images.length}`;
+        }
+      }
+
+      let currentImageIndex = 0;
 
       const modal = document.getElementById("modal");
       const modalImage = document.getElementById("modalImage");
