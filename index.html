@@ -143,11 +143,13 @@
 
     <footer class="footer">
       <div class="footer-bottom">
-        <p>&copy; 2024 Venkatnathan Lab. All rights reserved.</p>
+        <p>&copy; <span id="year"></span> Venkatnathan Lab. All rights reserved.</p>
       </div>
     </footer>
 
     <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+      
       // For hamburger menu
       const hamburger = document.querySelector(".hamburger");
       const navLinks = document.querySelector(".nav-links");
