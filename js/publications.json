@@ -1,6 +1,11 @@
 {
   "publications": [
     {
+      "id": 57,
+      "title": "N.Dey, A.Venkatnathan, “Modeling Ion Conduction in Soft Electrolytes.” Annu. Rev. Mater. Res. 2026. 56:155–78. ",
+      "link": "https://www.annualreviews.org/content/journals/10.1146/annurev-matsci-072924-113817"
+    },
+    {
       "id": 56,
       "title": "N.Dey, A.Venkatnathan, S.Ogale, and A.Bano, “Strategic Screening of Dopants for Na0.67Ni0.33Mn0.67O2 Cathodes: A Computational Roadmap for Sodium-Ion Battery Innovation.” Small (2026): e13165. ",
       "image": "..//images//publications//pub56.jpeg",
