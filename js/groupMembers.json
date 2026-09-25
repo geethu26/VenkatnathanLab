@@ -4,7 +4,7 @@
       "name": "Nayan Dey",
       "image": "../images/group/NayanDey.jpg",
       "role": "Ph.D Student, 2024-ongoing",
-      "ResearchTopic": "Computational Modeling of Battery Electrolytes and Electrode Materials",
+      "researchTopic": "Computational Modeling of Battery Electrolytes and Electrode Materials",
       "email": "Email: nayan.dey@students.iiserpune.ac.in",
       "education": "IIT Patna (MSc) (2024)"
     },
@@ -19,21 +19,21 @@
       "name": "Vishnu Sudarsanan",
       "image": "../images/group/Vishnu Sudarsanan.jpeg",
       "role": "Postdoctoral Researcher, 2026-ongoing",
-      "ResearchTopic":"Li and Mn-rich cathode materials for Li-ion batteries",
+      "researchTopic":"Li and Mn-rich cathode materials for Li-ion batteries",
       "education": "Ph.D. Central University of Tamil Nadu"
     },
     {
       "name": "Nitin Sharma",
       "image": "../images/group/NitinSharma.jpeg",
       "role": "MSc. student",
-      "ResearchTopic":"Molecular Simulations of Methane Hydrate Formation",
+      "researchTopic":"Molecular Simulations of Methane Hydrate Formation",
       "info": "MSc. student, IISER Pune"
     },
     {
       "name": "Satvik Ram Narayanan",
       "image": "../images/group/Satvik Ram Narayanan.jpeg",
       "role": "BS-MS Project Student",
-      "ResearchTopic": "Quantum computing for small molecules",
+      "researchTopic": "Quantum computing for small molecules",
       "info": "BS-MS Project Student, IISER Pune"
     }
   ],
