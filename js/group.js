@@ -10,7 +10,7 @@ function createMemberItem(member) {
                 ${member.role ? `<p>${member.role}</p>` : ""}
                 ${
                   member.researchTopic
-                    ? `<p><strong>Research Topic:</strong> ${member.researchTopic}</p>`
+                    ? `<p><strong>Research Topic:</strong> ${member.ResearchTopic}</p>`
                     : ""
                 }
                 ${
